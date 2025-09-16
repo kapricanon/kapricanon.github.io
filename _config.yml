@@ -2,4 +2,7 @@ title: "My Simple Site"
 description: "Small site with a few menu options"
 baseurl: ""
 url: "https://kapricanon.github.io"
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
