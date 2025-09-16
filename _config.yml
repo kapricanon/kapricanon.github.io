@@ -2,4 +2,4 @@ title: "My Simple Site"
 description: "Small site with a few menu options"
 baseurl: ""
 url: "https://kapricanon.github.io"
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
