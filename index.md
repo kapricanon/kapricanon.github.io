@@ -5,12 +5,12 @@ title: Untanglemystringart
 
 <nav style="margin-bottom:1.5em">
 	<a href="/">Home</a> |
-	<a href="/example1.html">Example 1</a> |
-	<a href="/example2.html">Example 2</a> |
-	<a href="/example3.html">Example 3</a> |
-	<a href="/example4.html">Example 4</a> |
-	<a href="/about.html">About Us</a> |
-	<a href="/contact.html">Contact Us</a>
+	<a href="/mywork.html">MY WORK</a> |
+	<a href="/workshops.html">WORKSHOPS</a> |
+	<a href="/parties.html">PARTIES</a> |
+	<a href="/customartwork.html">CUSTOM ARTWORK</a> |
+	<a href="/about.html">ABOUT ME</a> |
+	<a href="/contact.html">CONTACT</a>
 </nav>
 
 # Welcome

@@ -1,6 +1,6 @@
 ---
+title: MY WORK
 layout: default
-title: About
 ---
 
 <nav style="margin-bottom:1.5em">
@@ -13,6 +13,10 @@ title: About
 	<a href="/contact.html">CONTACT</a>
 </nav>
 
-# About Us
 
-Welcome to Untangle for personalised string art, workshops and parties. You Name it, I NAIL it !! 😃
+# MY WORK
+
+Here are some pictures for MY WORK:
+
+![Photo 1](/assets/images/photo1.jpg)
+![Photo 2](/assets/images/photo2.jpg)
