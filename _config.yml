@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://kapricanon.github.io"
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
-	- jekyll-remote-theme
+- jekyll-remote-theme
 
 
 
