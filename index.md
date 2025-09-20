@@ -4,7 +4,7 @@ title: Untanglemystringart
 ---
 
 <nav style="margin-bottom:1.5em">
-	<a href="/">Home</a> |
+	<a href="/">HOME</a> |
 	<a href="/mywork.html">MY WORK</a> |
 	<a href="/workshops.html">WORKSHOPS</a> |
 	<a href="/parties.html">PARTIES</a> |

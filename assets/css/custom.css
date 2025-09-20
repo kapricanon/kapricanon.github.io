@@ -1,0 +1,4 @@
+/* Hide the GitHub Pages default footer message */
+footer[role="contentinfo"], .site-footer-owner, .site-footer-credits {
+  display: none !important;
+}
