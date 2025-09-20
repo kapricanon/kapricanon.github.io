@@ -18,7 +18,9 @@ layout: default
 
 Here are some pictures for PARTIES:
 
-<a href="/assets/images/photo1.jpg" data-lightbox="parties" data-title="Photo 1"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
-<a href="/assets/images/photo2.jpg" data-lightbox="parties" data-title="Photo 2"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
-<a href="/assets/images/photo1.jpg" data-lightbox="parties" data-title="Photo 1"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
-<a href="/assets/images/photo2.jpg" data-lightbox="parties" data-title="Photo 2"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
+{% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/parties/'" %}
+{% for image in images %}
+	<a href="{{ image.path }}" data-lightbox="parties" data-title="{{ image.name }}">
+		<img src="{{ image.path }}" alt="{{ image.name }}" width="200">
+	</a>
+{% endfor %}
