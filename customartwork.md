@@ -18,5 +18,7 @@ layout: default
 
 Here are some pictures for CUSTOM ARTWORK:
 
-![Photo 2](/assets/images/photo2.jpg)
-![Photo 1](/assets/images/photo1.jpg)
+<a href="/assets/images/photo2.jpg" target="_blank"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
+<a href="/assets/images/photo1.jpg" target="_blank"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
+<a href="/assets/images/photo2.jpg" target="_blank"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
+<a href="/assets/images/photo1.jpg" target="_blank"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
