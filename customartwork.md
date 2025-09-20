@@ -18,7 +18,7 @@ layout: default
 
 Here are some pictures for CUSTOM ARTWORK:
 
-<a href="/assets/images/photo2.jpg" target="_blank"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
-<a href="/assets/images/photo1.jpg" target="_blank"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
-<a href="/assets/images/photo2.jpg" target="_blank"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
-<a href="/assets/images/photo1.jpg" target="_blank"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
+<a href="/assets/images/photo2.jpg" data-lightbox="customartwork" data-title="Photo 2"><img src="/assets/images/photo2.jpg" alt="Photo 2" width="200"></a>
+<a href="/assets/images/photo1.jpg" data-lightbox="customartwork" data-title="Photo 1"><img src="/assets/images/photo1.jpg" alt="Photo 1" width="200"></a>
+<a href="/assets/images/photo2.jpg" data-lightbox="customartwork" data-title="Photo 2" width="200"></a>
+<a href="/assets/images/photo1.jpg" data-lightbox="customartwork" data-title="Photo 1" width="200"></a>
