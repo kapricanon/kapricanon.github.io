@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Untanglemystringart
 ---
 
 <nav style="margin-bottom:1.5em">
