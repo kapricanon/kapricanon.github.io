@@ -5,8 +5,8 @@ url: "https://kapricanon.github.io"
 theme: jekyll-theme-cayman
 
 include:
-	- _includes/head-custom.html
-	- _includes/footer.html
+- _includes/head-custom.html
+- _includes/footer.html
 
 
 
