@@ -4,7 +4,6 @@ title: Home
 ---
 # Welcome
 
-This is a super-simple site made with Jekyll + GitHub Pages.
+This is a sample photo gallery website built with Jekyll and GitHub Pages.
 
-- Click **About** to learn more.
-- Click **Gallery** to see photos.
+Explore the example pages to see different image lists, or learn more about us and how to contact us using the menu above.
