@@ -1,4 +1,9 @@
-/* Hide the GitHub Pages default footer message */
-footer[role="contentinfo"], .site-footer-owner, .site-footer-credits {
+/* Hide the GitHub Pages default footer message and Cayman theme's default footer */
+footer[role="contentinfo"], .site-footer-owner, .site-footer-credits, .footer, .page-footer {
   display: none !important;
+}
+
+/* Always show our custom footer */
+footer {
+  display: block !important;
 }
