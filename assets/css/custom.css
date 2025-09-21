@@ -3,8 +3,10 @@
 /* Sticky nav bar always on top after header */
 /* Menu bar stays in normal flow, not sticky */
 .sticky-nav {
-  position: static;
-  background: #fff;
+  position: sticky;
+  top: 240px; /* adjust this value to match the actual header height in px */
+  z-index: 999;
+  background: #e0e7ff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 /* --- Cleaned: Logo and Page Header --- */
@@ -15,6 +17,9 @@
   align-items: stretch;
   max-height: 15em;
   min-height: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .header-flex {
   display: flex;
