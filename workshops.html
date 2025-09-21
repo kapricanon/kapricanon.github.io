@@ -14,9 +14,6 @@ layout: default
 </nav>
 
 
-
-# WORKSHOPS
-
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/workshops/'" %}
 <div class="lazy-gallery" data-lightbox="workshops" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
