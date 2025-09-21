@@ -6,7 +6,7 @@
   position: sticky;
   top: 240px; /* adjust this value to match the actual header height in px */
   z-index: 999;
-  background: #e0e7ff;
+  background: #e1e7ff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 /* --- Cleaned: Logo and Page Header --- */
