@@ -13,8 +13,6 @@ layout: default
 	<a href="/contact.html" class="active">CONTACT</a>
 </nav>
 
-# Contact Us
-
 For inquiries, please email us at: untanglestringart@gmail.com
 You can also look at my latest creations and follow on:
 

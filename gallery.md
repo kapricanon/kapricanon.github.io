@@ -2,8 +2,6 @@
 layout: default
 title: Gallery
 ---
-# Gallery
-
 Here are some photos:
 
 ![Photo 1](/assets/images/photo1.jpg)

@@ -13,8 +13,6 @@ title: About
 	<a href="/contact.html">CONTACT</a>
 </nav>
 
-# About Us
-
 Welcome to Untangle for personalised string art, workshops and parties. You Name it, I NAIL it !! 😃
 
 {% include footer.html %}

@@ -13,10 +13,6 @@ layout: default
 	<a href="/contact.html">CONTACT</a>
 </nav>
 
-
-
-# CUSTOM ARTWORK
-
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/customartwork/'" %}
 <div class="lazy-gallery" data-lightbox="customartwork" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}

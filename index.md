@@ -13,8 +13,6 @@ title: Untanglemystringart
 	<a href="/contact.html">CONTACT</a>
 </nav>
 
-# Welcome
-
 Welcome to Untangle String Art – where creativity meets craftsmanship! We specialize in personalized string art for all occasions, including parties, custom designs, wellbeing themes, and more.
 
 
