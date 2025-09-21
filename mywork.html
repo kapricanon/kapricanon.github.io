@@ -16,8 +16,6 @@ layout: default
 
 # MY WORK
 
-Here are some pictures for MY WORK:
-
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/mywork/'" %}
 {% for image in images %}
 	<a href="{{ image.path }}" data-lightbox="mywork" data-title="{{ image.name }}">

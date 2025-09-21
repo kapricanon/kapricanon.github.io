@@ -16,8 +16,6 @@ layout: default
 
 # PARTIES
 
-Here are some pictures for PARTIES:
-
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/parties/'" %}
 {% for image in images %}
 	<a href="{{ image.path }}" data-lightbox="parties" data-title="{{ image.name }}">
