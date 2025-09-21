@@ -1,3 +1,83 @@
+/* Keep nav menu on one line and allow horizontal scroll on small screens */
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 1.5em auto;
+  padding: 0 2vw;
+}
+nav a {
+  display: inline-block;
+  white-space: nowrap;
+}
+/* Smooth fade-in for main content */
+.container {
+  animation: content-fadein 1.1s cubic-bezier(.4,1.7,.7,1);
+}
+@keyframes content-fadein {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Modern animated gradient background */
+body {
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 50%, #f0fdfa 100%);
+  min-height: 100vh;
+  animation: bg-move 12s ease-in-out infinite alternate;
+}
+@keyframes bg-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Animated footer */
+footer {
+  display: block !important;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: footer-fadein 1.2s cubic-bezier(.4,1.7,.7,1) 0.5s forwards;
+}
+@keyframes footer-fadein {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button and nav link hover effects */
+nav a, .btn, button {
+  transition: color 0.2s, background 0.2s, box-shadow 0.3s, transform 0.2s;
+  border-radius: 6px;
+  padding: 0.2em 0.7em;
+  text-decoration: none;
+  color: #3b3b3b;
+}
+nav a:hover, .btn:hover, button:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
+  box-shadow: 0 2px 12px rgba(99,102,241,0.12);
+  transform: translateY(-2px) scale(1.06);
+}
+
+/* Gallery image entrance animation */
+.lazy-gallery a {
+  opacity: 0;
+  transform: scale(0.95) translateY(20px);
+  animation: gallery-fadein 0.7s cubic-bezier(.4,1.7,.7,1) forwards;
+  animation-delay: calc(var(--i, 0) * 0.07s);
+}
+.lazy-gallery a.loaded {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+@keyframes gallery-fadein {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
 /* Gallery image frame and spacing */
 .lazy-gallery {
   display: flex;

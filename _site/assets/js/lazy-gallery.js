@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
       for (var i = loaded; i < end; i++) {
         var a = document.createElement('a');
         a.href = images[i].path;
-        a.setAttribute('data-lightbox', container.getAttribute('data-lightbox'));
-        a.setAttribute('data-title', images[i].name);
+  a.setAttribute('data-lightbox', container.getAttribute('data-lightbox'));
+  // Do not set data-title, so no caption is shown in the lightbox
+        a.style.setProperty('--i', i);
         var img = document.createElement('img');
         img.src = images[i].path;
         img.alt = images[i].name;
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
         img.loading = 'lazy';
         a.appendChild(img);
         container.appendChild(a);
+        // Trigger animation after insertion
+        setTimeout((function(aEl){
+          return function(){ aEl.classList.add('loaded'); };
+        })(a), 30);
       }
       loaded = end;
     }
