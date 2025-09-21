@@ -17,8 +17,7 @@ layout: default
 # PARTIES
 
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/parties/'" %}
-{% for image in images %}
-	<a href="{{ image.path }}" data-lightbox="parties" data-title="{{ image.name }}">
-		<img src="{{ image.path }}" alt="{{ image.name }}" width="200">
-	</a>
-{% endfor %}
+<div class="lazy-gallery" data-lightbox="parties" data-images='[
+	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
+]'></div>
+<script src="/assets/js/lazy-gallery.js"></script>
