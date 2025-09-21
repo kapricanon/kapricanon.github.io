@@ -13,6 +13,14 @@ nav a {
   display: inline-block;
   white-space: nowrap;
 }
+nav a.active {
+  background: #e0e7ff;
+  color: #222;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0.2em 0.7em;
+  text-decoration: none;
+}
 /* Smooth fade-in for main content */
 .container {
   animation: content-fadein 1.1s cubic-bezier(.4,1.7,.7,1);

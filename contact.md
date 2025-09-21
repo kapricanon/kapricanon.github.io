@@ -10,7 +10,7 @@ layout: default
 	<a href="/parties.html">PARTIES</a> |
 	<a href="/customartwork.html">CUSTOM ARTWORK</a> |
 	<a href="/about.html">ABOUT ME</a> |
-	<a href="/contact.html">CONTACT</a>
+	<a href="/contact.html" class="active">CONTACT</a>
 </nav>
 
 # Contact Us
