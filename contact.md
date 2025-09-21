@@ -16,7 +16,10 @@ layout: default
 For inquiries, please email us at: untanglestringart@gmail.com
 You can also look at my latest creations and follow on:
 
-facebook at https://www.facebook.com/UntangleMyStringArt/  
-Instagram at https://www.instagram.com/untanglemystringart/
+
+
+[Facebook](https://www.facebook.com/UntangleMyStringArt/)<br>
+[Instagram](https://www.instagram.com/untanglemystringart/)<br>
+[LinkedIn](https://www.linkedin.com/company/untanglemystringart/)
 
 {% include footer.html %}

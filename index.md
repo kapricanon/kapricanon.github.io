@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Untanglemystringart
+title: UntangleMyStringArt
 ---
 
 <nav style="margin-bottom:1.5em">
@@ -13,7 +13,7 @@ title: Untanglemystringart
 	<a href="/contact.html">CONTACT</a>
 </nav>
 
-Welcome to Untangle String Art – where creativity meets craftsmanship! We specialize in personalized string art for all occasions, including parties, custom designs, wellbeing themes, and more.
+Welcome to Untangle String Art – where creativity meets craftsmanship! We specialize in personalized string art for all occasions, including parties, custom designs, wellbeing themes, corporate and more.
 
 
 Browse our gallery to see unique creations, discover our workshops, book us for your next party, or request a custom piece that’s truly one-of-a-kind. Let us help you celebrate life’s moments with art that’s made just for you.
