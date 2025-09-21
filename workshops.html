@@ -22,3 +22,4 @@ layout: default
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
 ]'></div>
 <script src="/assets/js/lazy-gallery.js"></script>
+{% include footer.html %}
