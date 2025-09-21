@@ -1,3 +1,28 @@
+/* --- Page Header Height Reduction --- */
+.page-header {
+  padding: 3.85em 0 2.25em 0;
+  text-align: center;
+}
+.page-header .project-name {
+  font-size: 2.1em;
+  margin-bottom: 0.2em;
+  line-height: 1.1;
+}
+.page-header .project-tagline {
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+@media (max-width: 600px) {
+  .page-header .project-name {
+    font-size: 1.3em;
+  }
+  .page-header .project-tagline {
+    font-size: 0.95em;
+  }
+  .page-header {
+    padding: 2.25em 0 1.25em 0;
+  }
+}
 /* Keep nav menu on one line and allow horizontal scroll on small screens */
 nav {
   display: flex;
@@ -87,16 +112,26 @@ nav a:hover, .btn:hover, button:hover {
   }
 }
 /* Gallery image frame and spacing */
+/* Gallery grid: 4 per row on desktop, responsive on mobile */
 .lazy-gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  justify-content: flex-start;
   margin-top: 1.5em;
 }
 .lazy-gallery a {
   display: block;
   box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .lazy-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .lazy-gallery {
+    grid-template-columns: 1fr;
+  }
 }
 .lazy-gallery img {
   border: 3px solid #eee;
