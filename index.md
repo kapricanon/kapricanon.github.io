@@ -3,6 +3,7 @@ layout: default
 title: UntangleMyStringArt
 ---
 
+
 <nav style="margin-bottom:1.5em">
 	<a href="/">HOME</a> |
 	<a href="/mywork.html">MY WORK</a> |
