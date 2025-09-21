@@ -3,15 +3,6 @@ title: CUSTOM ARTWORK
 layout: default
 ---
 
-</nav style="margin-bottom:1.5em">
-	<a href="/">Home</a> |
-	<a href="/mywork.html">MY WORK</a> |
-	<a href="/workshops.html">WORKSHOPS</a> |
-	<a href="/parties.html">PARTIES</a> |
-	<a href="/customartwork.html" class="active">CUSTOM ARTWORK</a> |
-	<a href="/about.html">ABOUT ME</a> |
-	<a href="/contact.html">CONTACT</a>
-</nav>
 
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/customartwork/'" %}
 <div class="lazy-gallery" data-lightbox="customartwork" data-images='[
