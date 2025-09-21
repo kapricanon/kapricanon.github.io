@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var images = JSON.parse(container.getAttribute('data-images'));
     var batchSize = 12;
     var loaded = 0;
+    // Clear any existing content to avoid duplication
+    container.innerHTML = '';
     function loadBatch() {
+      // Only load if not already loaded all
+      if (loaded >= images.length) return;
       var end = Math.min(loaded + batchSize, images.length);
       for (var i = loaded; i < end; i++) {
         var a = document.createElement('a');
