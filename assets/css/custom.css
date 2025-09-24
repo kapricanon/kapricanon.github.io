@@ -3,8 +3,10 @@
 /* Sticky nav bar always on top after header */
 /* Menu bar stays in normal flow, not sticky */
 .sticky-nav {
-  align-self: center;
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
   position: sticky;
   top: 120px; /* adjust this value to match the actual header height in px */
   z-index: 999;
