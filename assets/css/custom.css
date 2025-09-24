@@ -221,20 +221,20 @@ footer[style] {
     background: #6366f1;
     color: #fff;
     border: none;
-    font-size: 1.2em;
-    padding: 0.5em 1em;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
     border-radius: 6px;
     margin: 0.5em auto 0.2em auto;
     cursor: pointer;
   }
   .mobile-menu-list {
     display: none;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
     background: #6366f1;
     border-radius: 8px;
     margin: 0.2em auto;
-    padding: 0.5em 0;
+    padding: 0.4em 0;
     width: 90vw;
     box-shadow: 0 2px 12px rgba(99,102,241,0.12);
     z-index: 10001;
@@ -245,8 +245,8 @@ footer[style] {
   }
   .mobile-menu-list a {
     color: #fff !important;
-    font-size: 1.1em;
-    padding: 0.5em 0;
+    font-size: 0.9em;
+    padding: 0.4em 0;
     text-align: center;
     width: 100%;
     text-decoration: none;
