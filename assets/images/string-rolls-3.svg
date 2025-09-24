@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Three cotton-ball-style spools with a thread path that extends leftwards
+     so the string can visually pass underneath the "Untangle" header text.
+     This file is a new variant named string-rolls-3.svg to avoid touching the existing file.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 180" width="620" height="180" role="img" aria-label="Three string spools with trailing thread">
+  <defs>
+    <radialGradient id="fluffGrad-red" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffecec"/>
+      <stop offset="60%" stop-color="#ff9a9a"/>
+      <stop offset="100%" stop-color="#d95b5b"/>
+    </radialGradient>
+    <radialGradient id="fluffGrad-yellow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fffbe6"/>
+      <stop offset="60%" stop-color="#ffe08a"/>
+      <stop offset="100%" stop-color="#f2c347"/>
+    </radialGradient>
+    <radialGradient id="fluffGrad-green" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#eefef2"/>
+      <stop offset="60%" stop-color="#8ae5a3"/>
+      <stop offset="100%" stop-color="#2db06f"/>
+    </radialGradient>
+    <radialGradient id="woodGrad" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#caa57f"/>
+      <stop offset="100%" stop-color="#9a6b44"/>
+    </radialGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset in="blur" dx="0" dy="2" result="off"/>
+      <feMerge>
+        <feMergeNode in="off"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="stringShadow" x="-50%" y="-200%" width="200%" height="400%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.2" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Group offset right so the trailing thread can extend left under the header text when placed in layout -->
+  <g transform="translate(124,8)">
+
+  <!-- Long trailing thread: smoother natural S-curve starting near the right spool and ending left-of-title -->
+  <path d="M330,81 C300,93 260,107 220,115 C180,123 120,125 60,121 C20,119 -10,128 -28,136" fill="none" stroke="#b76e4b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#stringShadow)" opacity="0.98"/>
+  <path d="M330,81 C300,93 260,107 220,115 C180,123 120,125 60,121 C20,119 -10,128 -28,136" fill="none" stroke="#f7efe8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+
+    <!-- Left spool (rear) - slightly larger -->
+  <g transform="translate(222,69)" filter="url(#softShadow)">
+  <ellipse cx="0" cy="44" rx="44" ry="44" fill="url(#fluffGrad-red)"/>
+      <ellipse cx="0" cy="44" rx="30" ry="30" fill="url(#woodGrad)"/>
+      <circle cx="0" cy="44" r="9" fill="#2b1f18"/>
+      <g stroke="#caa58a" stroke-width="2.4" stroke-linecap="round" opacity="0.86">
+        <path d="M-30,34 C-20,38 -10,40 0,40 C10,40 20,38 30,34" fill="none"/>
+        <path d="M-32,46 C-20,50 -8,52 0,52 C8,52 20,50 32,46" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Center spool (front) - slightly larger -->
+  <g transform="translate(272,91) rotate(-6)" filter="url(#softShadow)">
+  <ellipse cx="0" cy="36" rx="46" ry="46" fill="url(#fluffGrad-yellow)"/>
+      <ellipse cx="0" cy="36" rx="30" ry="30" fill="url(#woodGrad)"/>
+      <circle cx="0" cy="36" r="9" fill="#2b1f18"/>
+      <g stroke="#caa58a" stroke-width="2.4" stroke-linecap="round" opacity="0.88">
+        <path d="M-32,24 C-22,28 -8,32 0,32 C8,32 22,28 32,24" fill="none"/>
+        <path d="M-34,38 C-22,42 -8,44 0,44 C8,44 22,42 34,38" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Right spool (origin of the visible thread) - slightly larger -->
+  <g transform="translate(330,71)" filter="url(#softShadow)">
+  <ellipse cx="0" cy="38" rx="40" ry="40" fill="url(#fluffGrad-green)"/>
+      <ellipse cx="0" cy="38" rx="26" ry="26" fill="url(#woodGrad)"/>
+      <circle cx="0" cy="38" r="8" fill="#2b1f18"/>
+      <g stroke="#caa58a" stroke-width="2.4" stroke-linecap="round" opacity="0.9">
+        <path d="M-28,28 C-16,34 -6,34 0,34 C6,34 16,34 28,28" fill="none"/>
+        <path d="M-30,40 C-16,46 -6,46 0,46 C6,46 16,46 30,40" fill="none"/>
+      </g>
+    </g>
+
+  <!-- Small wrap detail where the thread leaves the right-most spool (joined to the long trailing curve) -->
+  <path d="M342,73 C332,77 302,85 242,99" fill="none" stroke="#b76e4b" stroke-width="5" stroke-linecap="round" filter="url(#stringShadow)" opacity="0.98"/>
+  <path d="M342,73 C332,77 302,85 242,99" fill="none" stroke="#f7efe8" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- Grounding shadow beneath cluster -->
+  <ellipse cx="287" cy="115" rx="110" ry="18" fill="#000" opacity="0.06"/>
+  </g>
+
+</svg>

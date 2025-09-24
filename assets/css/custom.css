@@ -65,6 +65,26 @@ footer[style] {
   letter-spacing: 0.08em;
   font-stretch: expanded;
 }
+
+#header-string-rolls {
+  position: relative;
+  top: 0px;
+  z-index: 2; /* baseline beneath project-name but above other elements */
+  opacity: 0.98;
+  pointer-events: none;
+  width: 150px;
+  transform: translate(-72px, 11px) scale(1); /* move image 2px right to match new spool position */
+  display: inline-block;
+}
+.page-header .project-name {
+  position: relative;
+  z-index: 20; /* ensure header text sits above the string */
+  background: transparent;
+}
+
+@media (max-width: 700px) {
+  #header-string-rolls { display: none; }
+}
 .page-header .project-tagline {
   font-size: 0.55em;
   margin-bottom: 0.2em;
@@ -335,7 +355,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   gap: 0;
-  margin-top: 1em;
+  margin: 1.5em 0;
   position: relative;
 }
 .mission-img {
