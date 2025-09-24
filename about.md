@@ -5,9 +5,6 @@ title: About
 
 Welcome to Untangle for personalised string art, workshops and parties. You Name it, I NAIL it!! 😃
 
-<span style="display:none;">string, art, parties, birthdays, occasions, stringart, untanglemystringart, corporate events, corporate art, personalised art, personalised gifts</span>
-
-*Keywords: string, art, parties, birthdays, occasions, stringart, untanglemystringart, corporate events, corporate art, personalised art, personalised gifts*
 
 <div class="about-artistic">
 Thank you for visiting my website.<br><br>
