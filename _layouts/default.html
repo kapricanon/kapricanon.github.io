@@ -9,14 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     {% include head-custom.html %}
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <div class="header-flex">
+  <div class="header-flex" style="position:relative;">
         <img src="/assets/images/logo/Screenshot 2025-09-21 at 20.36.01.png" alt="Logo" class="site-logo" />
         <div class="header-content" style="display:flex; flex-direction:column; justify-content:center; height:100%;">
           <h1 class="project-name" style="margin-bottom:0; font-size:1.8em; line-height:1;">Untangle</h1>
@@ -41,6 +42,13 @@
             <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>CONTACT</a>
           </div>
           <script src="/assets/js/mobile-menu.js"></script>
+        </div>
+  <div class="header-social" style="position:absolute; bottom:0.2em; right:1.5em; display:flex; gap:1em; align-items:center;">
+          <a href="https://www.facebook.com/UntangleMyStringArt/" target="_blank" title="Facebook" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(200deg);"></a>
+          <a href="https://www.instagram.com/untanglemystringart/" target="_blank" title="Instagram" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(320deg);"></a>
+          <a href="https://www.linkedin.com/company/untanglemystringart/" target="_blank" title="LinkedIn" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(180deg);"></a>
+          <a href="mailto:untanglestringart@gmail.com" title="Email" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(0deg);"></a>
+        </div>
         </div>
       </div>
     </header>
