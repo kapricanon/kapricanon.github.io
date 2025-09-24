@@ -16,6 +16,10 @@
     font-size: 1em !important;
     text-align: left !important;
     align-self: center !important;
+    margin-top: -7px !important;
+    transform: translateY(-5px) !important;
+    position: relative !important;
+    top: -5px !important;
   }
   .header-social {
     position: static !important;
@@ -27,18 +31,7 @@
     margin-bottom: 0.2em;
     width: 100%;
   }
-  .sticky-nav {
-    margin-bottom: 0.5em !important;
-    position: static !important;
-    left: unset !important;
-    transform: unset !important;
-    width: 100% !important;
-    text-align: center !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5em;
-  }
+  /* Mobile menu bar override (if needed) can go here */
 }
 /* Slim custom footer style */
 footer[style] {
@@ -49,14 +42,14 @@ footer[style] {
 /* Sticky nav bar always on top after header */
 /* Sticky nav bar always on top after header */
 /* Menu bar stays in normal flow, not sticky */
+/* Centered sticky nav for desktop */
+/* Centered sticky nav inside header bar */
 .sticky-nav {
   position: absolute;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
-  position: sticky;
-  top: 120px; /* adjust this value to match the actual header height in px */
-  z-index: 999;
   background: transparent;
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -68,7 +61,7 @@ footer[style] {
   display: flex;
   align-items: stretch;
   max-height: 7.5em;
-  min-height: 0;
+  min-height: 7.5em;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -111,7 +104,7 @@ footer[style] {
   font-size: 1.05em;
   margin-bottom: 0.2em;
   line-height: 1.1;
-  margin-top: 0.7em;
+  margin-top: 6px;
   font-family: 'Pacifico', cursive;
   letter-spacing: 0.08em;
   font-stretch: expanded;
@@ -124,13 +117,19 @@ footer[style] {
   opacity: 0.98;
   pointer-events: none;
   width: 150px;
-  transform: translate(-72px, 11px) scale(1); /* move image 2px right to match new spool position */
+  transform: translate(-72px, -4px) scale(1); /* move image 2px right to match new spool position */
   display: inline-block;
 }
 .page-header .project-name {
   position: relative;
   z-index: 20; /* ensure header text sits above the string */
   background: transparent;
+}
+.project-subname {
+  margin-top: -7px;
+  transform: translateY(-5px);
+  position: relative;
+  top: -5px;
 }
 
 @media (max-width: 700px) {
