@@ -242,6 +242,7 @@ footer[style] {
   }
   .mobile-menu-list.open {
     display: flex !important;
+    flex-direction: column !important;
   }
   .mobile-menu-list a {
     color: #fff !important;
