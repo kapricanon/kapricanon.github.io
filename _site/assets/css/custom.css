@@ -324,3 +324,47 @@ footer[role="contentinfo"], .site-footer-owner, .site-footer-credits, .footer, .
 footer {
   display: block !important;
 }
+
+/* Zig-zag mission images layout */
+.mission-zigzag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 1em;
+  position: relative;
+}
+.mission-img {
+  width: 80px;
+  height: auto;
+  margin: 0 -10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s;
+}
+.mission-img-left {
+  transform: rotate(-8deg) translateY(0);
+  z-index: 2;
+}
+.mission-img-right {
+  transform: rotate(8deg) translateY(30px);
+  z-index: 3;
+}
+.mission-img:hover {
+  transform: scale(1.08) rotate(0deg);
+  z-index: 10;
+}
+@media (max-width: 600px) {
+  .mission-zigzag {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .mission-img {
+    margin: 0 0 0.5em 0;
+    width: 60px;
+  }
+}
