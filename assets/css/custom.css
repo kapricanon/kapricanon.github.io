@@ -1,3 +1,8 @@
+/* Slim custom footer style */
+footer[style] {
+  padding: 0.1em 0.2em 0.1em 0.2em !important;
+  font-size: 0.7em !important;
+}
 /* Sticky nav bar always on top after header */
 /* Sticky nav bar always on top after header */
 /* Sticky nav bar always on top after header */
@@ -132,8 +137,8 @@
     padding: 4px;
   }
   footer {
-    font-size: 0.8em;
-    padding: 0.7em 0.2em 0.7em 0.2em;
+  font-size: 0.8em;
+  padding: 0.2em 0.2em 0.2em 0.2em;
   }
   .sticky-nav {
     display: none !important;
