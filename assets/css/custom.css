@@ -1,3 +1,45 @@
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+  }
+  .header-content > div {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5em !important;
+    margin-top: 0.5em !important;
+  }
+  .project-subname {
+    margin-left: 0 !important;
+    font-size: 1em !important;
+    text-align: left !important;
+    align-self: center !important;
+  }
+  .header-social {
+    position: static !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    width: 100%;
+  }
+  .sticky-nav {
+    margin-bottom: 0.5em !important;
+    position: static !important;
+    left: unset !important;
+    transform: unset !important;
+    width: 100% !important;
+    text-align: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+}
 /* Slim custom footer style */
 footer[style] {
   padding: 0.1em 0.2em 0.1em 0.2em !important;
