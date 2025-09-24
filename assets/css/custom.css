@@ -44,6 +44,15 @@ footer[style] {
   object-fit: contain;
   display: block;
 }
+/* Circular logo helper */
+.circular-logo {
+  width: 4.6em;
+  height: 4.6em;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  display: inline-block;
+}
 .header-content {
   flex: 1;
   display: flex;
@@ -104,7 +113,7 @@ footer[style] {
     width: 100%;
   }
   .site-logo {
-    height: 2.5em;
+    height: 4.2em;
     max-width: 80vw;
     margin-bottom: 0.5em;
   }
