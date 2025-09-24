@@ -3,19 +3,22 @@
 /* Sticky nav bar always on top after header */
 /* Menu bar stays in normal flow, not sticky */
 .sticky-nav {
+  align-self: center;
+  width: 100%;
   position: sticky;
-  top: 240px; /* adjust this value to match the actual header height in px */
+  top: 120px; /* adjust this value to match the actual header height in px */
   z-index: 999;
-  background: #e1e7ff;
+  background: transparent;
+  color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 /* --- Cleaned: Logo and Page Header --- */
 .page-header {
-  padding: 0.3em 0 0.2em 0;
+  padding: 0.15em 0 0.1em 0;
   text-align: center;
   display: flex;
   align-items: stretch;
-  max-height: 15em;
+  max-height: 7.5em;
   min-height: 0;
   position: sticky;
   top: 0;
@@ -23,8 +26,8 @@
 }
 .header-flex {
   display: flex;
-  align-items: stretch;
-  gap: 1.2em;
+  align-items: center;
+  gap: 0.4em;
   width: 100%;
 }
 .site-logo {
@@ -43,21 +46,24 @@
   text-align: left;
   margin-left: 0;
   margin-right: 0;
+  height: 100%;
+  /* margin-top removed to avoid moving menu bar */
 }
 .page-header .project-name {
-  font-size: 2.1em;
+  font-size: 1.05em;
   margin-bottom: 0.2em;
   line-height: 1.1;
+  margin-top: 0.7em;
 }
 .page-header .project-tagline {
-  font-size: 1.1em;
+  font-size: 0.55em;
   margin-bottom: 0.2em;
 }
 @media (max-width: 600px) {
   .page-header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2.25em 0 1.25em 0;
+  padding: 1.125em 0 0.625em 0;
   }
   .header-flex {
     flex-direction: column;
@@ -66,7 +72,7 @@
     width: 100%;
   }
   .site-logo {
-    height: 2.5em;
+  height: 1.25em;
   }
   .header-content {
     width: 100%;
@@ -74,10 +80,10 @@
     text-align: left;
   }
   .page-header .project-name {
-    font-size: 1.3em;
+  font-size: 0.65em;
   }
   .page-header .project-tagline {
-    font-size: 0.95em;
+  font-size: 0.475em;
   }
 }
 /* Keep nav menu on one line and allow horizontal scroll on small screens */
@@ -85,10 +91,10 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   gap: 0.5em;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto 1.5em auto;
+  margin: 0 0 1.5em 0;
   padding: 0 2vw;
 }
 
@@ -129,6 +135,14 @@ footer {
   opacity: 0;
   transform: translateY(30px);
   animation: footer-fadein 1.2s cubic-bezier(.4,1.7,.7,1) 0.5s forwards;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #fff;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+  padding-bottom: 0.5em;
 }
 @keyframes footer-fadein {
   to {
@@ -143,7 +157,7 @@ nav a, .btn, button {
   border-radius: 6px;
   padding: 0.2em 0.7em;
   text-decoration: none;
-  color: #3b3b3b;
+  color: #fff;
 }
 nav a:hover, .btn:hover, button:hover {
   color: #fff;
@@ -205,7 +219,7 @@ nav a:hover, .btn:hover, button:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 /* Hide the GitHub Pages default footer message and Cayman theme's default footer */
-footer[role="contentinfo"], .site-footer-owner, .site-footer-credits, .footer, .page-footer {
+footer[role="contentinfo"], .site-footer-owner, .site-footer-credits, .footer, .page-footer, .site-footer {
   display: none !important;
 }
 

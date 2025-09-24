@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var galleryContainers = document.querySelectorAll('.lazy-gallery');
   galleryContainers.forEach(function(container) {
     var images = JSON.parse(container.getAttribute('data-images'));
-    var batchSize = 12;
+  var batchSize = 24;
     var loaded = 0;
     // Clear any existing content to avoid duplication
     container.innerHTML = '';

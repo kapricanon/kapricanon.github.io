@@ -18,28 +18,21 @@
     <header class="page-header" role="banner">
       <div class="header-flex">
         <img src="/assets/images/logo/Screenshot 2025-09-21 at 20.36.01.png" alt="Logo" class="site-logo" />
-        <div class="header-content">
-          <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-          {% if site.github.is_project_page %}
-            <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-          {% endif %}
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-          {% endif %}
+        <div class="header-content" style="display:flex; flex-direction:column; justify-content:center; height:100%;">
+          <h1 class="project-name" style="margin-bottom:0; font-size:1.8em; line-height:1;">Untangle</h1>
+          <span class="project-subname" style="display:block; text-align:right; font-size:1em; color:#fff; margin-top:0.1em;">MyStringArt</span>
+          <nav class="sticky-nav" style="margin-top:0; margin-bottom:0;">
+            <a href="/"{% if page.url == '/' %} class="active"{% endif %}>HOME</a> |
+            <a href="/mywork.html"{% if page.url == '/mywork.html' %} class="active"{% endif %}>MY WORK</a> |
+            <a href="/workshops.html"{% if page.url == '/workshops.html' %} class="active"{% endif %}>WORKSHOPS</a> |
+            <a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>PARTIES</a> |
+            <a href="/customartwork.html"{% if page.url == '/customartwork.html' %} class="active"{% endif %}>CUSTOM ARTWORK</a> |
+            <a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>ABOUT ME</a> |
+            <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>CONTACT</a>
+          </nav>
         </div>
       </div>
     </header>
-  <nav class="sticky-nav" style="margin-bottom:1.5em">
-      <a href="/"{% if page.url == '/' %} class="active"{% endif %}>HOME</a> |
-      <a href="/mywork.html"{% if page.url == '/mywork.html' %} class="active"{% endif %}>MY WORK</a> |
-      <a href="/workshops.html"{% if page.url == '/workshops.html' %} class="active"{% endif %}>WORKSHOPS</a> |
-      <a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>PARTIES</a> |
-      <a href="/customartwork.html"{% if page.url == '/customartwork.html' %} class="active"{% endif %}>CUSTOM ARTWORK</a> |
-      <a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>ABOUT ME</a> |
-      <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>CONTACT</a>
-    </nav>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
