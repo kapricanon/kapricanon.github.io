@@ -9,6 +9,18 @@ title: UntangleMyStringArt
 Welcome to Untangle String Art – where creativity meets craftsmanship! We specialize in personalized string art for all occasions, including parties, custom designs, wellbeing themes, corporate and more.
 
 
-Browse our gallery to see unique creations, discover our workshops, book us for your next party, or request a custom piece that’s truly one-of-a-kind. Let us help you celebrate life’s moments with art that’s made just for you.
+
+---
+
+## Vision
+To inspire creativity and mindfulness through the art of string and Lippan, connecting people with meaningful themes and the beauty of symmetry found in nature and mathematics.
+
+## Mission
+To craft captivating pieces of string and Lippan art, run engaging workshops, and support causes that matter—making art accessible, educational, and enjoyable for all ages.
+
+## Goal
+To foster a vibrant community of art lovers, learners, and creators, sharing the joy of handmade art and empowering others to explore their own creative journeys.
+
+---
 
 {% include footer.html %}

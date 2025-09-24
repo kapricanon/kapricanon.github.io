@@ -20,8 +20,10 @@
   <div class="header-flex" style="position:relative;">
         <img src="/assets/images/logo/Screenshot 2025-09-21 at 20.36.01.png" alt="Logo" class="site-logo" />
         <div class="header-content" style="display:flex; flex-direction:column; justify-content:center; height:100%;">
-          <h1 class="project-name" style="margin-bottom:0; font-size:1.8em; line-height:1;">Untangle</h1>
-          <span class="project-subname" style="display:block; text-align:right; font-size:1em; color:#fff; margin-top:0.1em;">MyStringArt</span>
+          <div style="display:flex; align-items:flex-start; margin-top:1.2em;">
+            <h1 class="project-name" style="margin-bottom:0; font-size:1.8em; line-height:1;">Untangle</h1>
+            <span class="project-subname" style="display:block; align-self:flex-start; margin-left:-50px; font-size:1em; color:#fff;">MyStringArt</span>
+          </div>
           <nav class="sticky-nav" style="margin-top:0; margin-bottom:0;">
             <a href="/"{% if page.url == '/' %} class="active"{% endif %}>HOME</a> |
             <a href="/mywork.html"{% if page.url == '/mywork.html' %} class="active"{% endif %}>MY WORK</a> |
