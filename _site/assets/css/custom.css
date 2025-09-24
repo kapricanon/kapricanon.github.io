@@ -64,28 +64,76 @@
 @media (max-width: 600px) {
   .page-header {
     flex-direction: column;
-    align-items: flex-start;
-  padding: 1.125em 0 0.625em 0;
+    align-items: center;
+    padding: 0.7em 0 0.4em 0;
+    min-height: unset;
+    max-height: unset;
   }
   .header-flex {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5em;
+    align-items: center;
+    gap: 0.3em;
     width: 100%;
   }
   .site-logo {
-  height: 1.25em;
+    height: 2.5em;
+    max-width: 80vw;
+    margin-bottom: 0.5em;
   }
   .header-content {
     width: 100%;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
   .page-header .project-name {
-  font-size: 0.65em;
+    font-size: 1.2em;
+    margin-top: 0.2em;
   }
-  .page-header .project-tagline {
-  font-size: 0.475em;
+  .project-subname {
+    font-size: 0.9em !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+  .sticky-nav {
+    position: static !important;
+    left: unset !important;
+    transform: unset !important;
+    width: 100% !important;
+    margin: 0.5em 0 0 0 !important;
+    text-align: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0 1vw;
+  }
+  nav a {
+    font-size: 1em;
+    padding: 0.3em 0.7em;
+    width: auto;
+  }
+  .lazy-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 1em;
+  }
+  .lazy-gallery img {
+    width: 90vw !important;
+    max-width: 100%;
+    height: auto !important;
+    margin: 0 auto;
+    padding: 4px;
+  }
+  footer {
+    font-size: 0.8em;
+    padding: 0.7em 0.2em 0.7em 0.2em;
   }
 }
 /* Keep nav menu on one line and allow horizontal scroll on small screens */
