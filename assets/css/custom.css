@@ -1,4 +1,23 @@
 @media (max-width: 600px) {
+  .header-social-container-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    position: static;
+  }
+  .header-social-container-mobile .header-social {
+    position: static !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.7em;
+    margin: 0;
+    width: auto;
+    background: none;
+    z-index: 10;
+  }
   .header-flex {
     flex-direction: column;
     align-items: center;
@@ -36,28 +55,56 @@
   /* Mobile menu bar override (if needed) can go here */
   /* Compact mobile header bar and elements */
   .page-header {
-    padding: 0.2em 0 0.2em 0 !important;
-    min-height: unset !important;
-    max-height: unset !important;
+    padding: 0.1em 0 0.1em 0 !important;
+    min-height: 11em !important;
+    max-height: 11em !important;
+  }
+  .header-social {
+    position: absolute !important;
+    right: 1.2em;
+  /* nudge icons down ~10px and left ~5px on mobile to better align with menu */
+  bottom: 0.7em;
+  transform: translateY(10px) translateX(-5px);
+    top: auto !important;
+    z-index: 10;
+  }
+  .mobile-menu-btn {
+    position: absolute !important;
+    left: 50%;
+  /* keep horizontal centering, nudge down further (~20px total) to align with social icons */
+  transform: translateX(-50%) translateY(20px);
+    bottom: 0.7em !important;
+    margin: 0 !important;
+    z-index: 11;
   }
   .header-flex {
     gap: 0.1em !important;
   }
   .site-logo, .circular-logo {
-    height: 2.8em !important;
-    width: 2.8em !important;
-    max-width: 12vw !important;
+    height: 4.2em !important;
+    width: 4.2em !important;
+    max-width: 30vw !important;
     margin-bottom: 0.1em !important;
+    margin-top: 10px !important;
   }
   .header-content > div {
     margin-top: 0.1em !important;
     gap: 0.2em !important;
   }
   .page-header .project-name {
-    font-size: 1em !important;
-    margin-top: -10px !important;
-    margin-bottom: 0 !important;
-    line-height: 1.05 !important;
+    font-size: 1.2em !important;
+    margin-top: 10px !important;
+    /* nudge title up ~10px on mobile for visual alignment */
+    transform: translateY(-10px);
+    margin-bottom: 0.1em !important;
+    line-height: 1.1 !important;
+  }
+  .project-subname {
+    font-size: 1.2em !important;
+    margin-top: 0.2em !important;
+    margin-bottom: 0.2em !important;
+    margin-left: -50px !important;
+    margin-top: 10px !important;
   }
   .project-subname {
     font-size: 0.8em !important;
@@ -74,9 +121,10 @@
     height: 22px !important;
   }
   .mobile-menu-btn {
-    font-size: 0.95em !important;
-    padding: 0.2em 0.5em !important;
-    margin: 5px auto 0.1em auto !important;
+    font-size: 1.3em !important;
+    padding: 0.2em 0.7em !important;
+    /* remove the auto margin that pushes the button down on mobile; positioning handled via absolute bottom */
+    margin: 0 !important;
   }
 }
 /* Slim custom footer style */
