@@ -76,6 +76,11 @@
     bottom: 0.7em !important;
     margin: 0 !important;
     z-index: 11;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .mobile-menu-btn:hover {
+    background-color: #4f46e5; /* Slightly darker shade for hover */
+    transform: translateX(-50%) translateY(20px) scale(1.05); /* Ensure no horizontal shift */
   }
   .header-flex {
     gap: 0.1em !important;
