@@ -1,3 +1,38 @@
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+  }
+  .header-content > div {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5em !important;
+    margin-top: 0.5em !important;
+  }
+  .project-subname {
+    margin-left: 0 !important;
+    font-size: 1em !important;
+    text-align: left !important;
+    align-self: center !important;
+    margin-top: -7px !important;
+    transform: translateY(-5px) !important;
+    position: relative !important;
+    top: -5px !important;
+  }
+  .header-social {
+    position: static !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    width: 100%;
+  }
+  /* Mobile menu bar override (if needed) can go here */
+}
 /* Slim custom footer style */
 footer[style] {
   padding: 0.1em 0.2em 0.1em 0.2em !important;
@@ -7,14 +42,14 @@ footer[style] {
 /* Sticky nav bar always on top after header */
 /* Sticky nav bar always on top after header */
 /* Menu bar stays in normal flow, not sticky */
+/* Centered sticky nav for desktop */
+/* Centered sticky nav inside header bar */
 .sticky-nav {
   position: absolute;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
-  position: sticky;
-  top: 120px; /* adjust this value to match the actual header height in px */
-  z-index: 999;
   background: transparent;
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -26,7 +61,7 @@ footer[style] {
   display: flex;
   align-items: stretch;
   max-height: 7.5em;
-  min-height: 0;
+  min-height: 7.5em;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -69,7 +104,7 @@ footer[style] {
   font-size: 1.05em;
   margin-bottom: 0.2em;
   line-height: 1.1;
-  margin-top: 0.7em;
+  margin-top: 6px;
   font-family: 'Pacifico', cursive;
   letter-spacing: 0.08em;
   font-stretch: expanded;
@@ -82,13 +117,19 @@ footer[style] {
   opacity: 0.98;
   pointer-events: none;
   width: 150px;
-  transform: translate(-72px, 11px) scale(1); /* move image 2px right to match new spool position */
+  transform: translate(-72px, -4px) scale(1); /* move image 2px right to match new spool position */
   display: inline-block;
 }
 .page-header .project-name {
   position: relative;
   z-index: 20; /* ensure header text sits above the string */
   background: transparent;
+}
+.project-subname {
+  margin-top: -7px;
+  transform: translateY(-5px);
+  position: relative;
+  top: -5px;
 }
 
 @media (max-width: 700px) {
@@ -180,20 +221,20 @@ footer[style] {
     background: #6366f1;
     color: #fff;
     border: none;
-    font-size: 1.2em;
-    padding: 0.5em 1em;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
     border-radius: 6px;
-    margin: 0.5em auto 0.2em auto;
+    margin: 13px auto 0.2em auto;
     cursor: pointer;
   }
   .mobile-menu-list {
     display: none;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
     background: #6366f1;
     border-radius: 8px;
     margin: 0.2em auto;
-    padding: 0.5em 0;
+    padding: 0.4em 0;
     width: 90vw;
     box-shadow: 0 2px 12px rgba(99,102,241,0.12);
     z-index: 10001;
@@ -201,11 +242,12 @@ footer[style] {
   }
   .mobile-menu-list.open {
     display: flex !important;
+    flex-direction: column !important;
   }
   .mobile-menu-list a {
     color: #fff !important;
-    font-size: 1.1em;
-    padding: 0.5em 0;
+    font-size: 0.9em;
+    padding: 0.4em 0;
     text-align: center;
     width: 100%;
     text-decoration: none;
