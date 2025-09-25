@@ -165,7 +165,8 @@ footer[style] {
   }
   .page-header .project-name {
     font-size: 1.2em;
-    margin-top: 0.2em;
+    margin-top: -13px;
+    margin-bottom: 0.1em;
   }
   .project-subname {
     font-size: 0.9em !important;
