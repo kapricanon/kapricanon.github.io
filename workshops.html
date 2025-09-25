@@ -9,5 +9,5 @@ layout: default
 <div class="lazy-gallery" data-lightbox="workshops" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
 ]'></div>
-<script src="/assets/js/lazy-gallery.js"></script>
+<!-- lazy-gallery.js is now included only once in head-custom.html -->
 {% include footer.html %}
