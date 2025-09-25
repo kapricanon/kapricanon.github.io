@@ -3,8 +3,8 @@ title: PARTIES
 layout: default
 ---
 
-I do String Art parties for ages and abilities. <a href="mailto:untanglestringart@gmail.com">Contact Me</a> for more details.
-
+<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Parties</h2>
+<p>I do String Art parties for ages and abilities. <a href="mailto:untanglestringart@gmail.com">Contact Me</a> for more details.</p>
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/parties/'" %}
 <div class="lazy-gallery" data-lightbox="parties" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}

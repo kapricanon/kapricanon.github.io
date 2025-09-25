@@ -3,6 +3,9 @@ layout: default
 title: About
 ---
 
+
+<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">About Me</h2>
+
 Welcome to Untangle for personalised string art, workshops and parties. You Name it, I NAIL it!! 😃
 
 

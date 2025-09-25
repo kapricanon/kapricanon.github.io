@@ -4,7 +4,7 @@ layout: default
 ---
 
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/lippanart/'" %}
-<h2 style="text-align:center; margin-top:1.5em;">Lippan Art Gallery</h2>
+<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Lippan Art Gallery</h2>
 <div class="lazy-gallery" data-lightbox="lippanart" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
 ]'></div>

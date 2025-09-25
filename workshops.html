@@ -6,6 +6,7 @@ layout: default
 
 
 {% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/workshops/'" %}
+<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Workshop &amp; Exhibition Gallery</h2>
 <div class="lazy-gallery" data-lightbox="workshops" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
 ]'></div>
