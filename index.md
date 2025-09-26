@@ -6,7 +6,7 @@ title: UntangleMyStringArt
 
 <h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Welcome To Untangle My String Art</h2>
 
-Where creativity meets craftsmanship! I specialize in personalized string art for all occasions, including parties, custom designs, wellbeing themes, corporate events, and more.
+Where creativity meets craftsmanship! I specialise in personalised string art for all occasions, including parties, custom designs, wellbeing themes, corporate events, and more.
 
 
 
