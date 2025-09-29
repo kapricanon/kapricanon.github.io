@@ -58,8 +58,37 @@
       <img src="/assets/images/whatsapp/whatsapp.png" alt="WhatsApp" style="width:48px; height:48px; object-fit:cover;">
     </div>
     
-    <!-- Enhanced WhatsApp Handler -->
-    <script src="/assets/js/whatsapp-handler.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const whatsappButton = document.getElementById('whatsapp-button');
+        
+        whatsappButton.addEventListener('click', function() {
+          const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+          const phoneNumber = '447920692082';
+          const message = encodeURIComponent('Hi there!');
+          
+          if (isMobile) {
+            // For mobile: Use intent:// URL for Android and whatsapp:// for iOS
+            const isAndroid = /Android/i.test(navigator.userAgent);
+            const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+            
+            if (isAndroid) {
+              // Android intent URL - this bypasses the "not on WhatsApp" issue
+              window.location.href = `intent://send?phone=${phoneNumber}&text=${message}#Intent;scheme=whatsapp;package=com.whatsapp;end`;
+            } else if (isIOS) {
+              // iOS - try direct app first, then fallback
+              window.location.href = `whatsapp://send?phone=${phoneNumber}&text=${message}`;
+            } else {
+              // Other mobile browsers
+              window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            }
+          } else {
+            // Desktop: Use wa.me which opens WhatsApp Web
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+          }
+        });
+      });
+    </script>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
