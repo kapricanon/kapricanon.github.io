@@ -1,16 +1,36 @@
 ---
 layout: default
-title: "UntangleMyStringArt - Personalised String Art, Workshops & Parties"
-description: "Professional string art services in the UK. Custom personalised string art, workshops, exhibitions, parties, and Lippan art. You Name it, I NAIL it!"
-keywords: "string art, personalised string art, custom artwork, workshops, art parties, exhibitions, Lippan art, UK artist, handmade art, nail art, string patterns"
+title: "String Art UK | Personalised Custom String Art | UntangleMyStringArt"
+description: "Professional string art artist in UK specialising in personalised custom string art, nail art workshops, handmade string art gifts, art parties & exhibitions. Bespoke string art commissions."
+keywords: "string art UK, personalised string art, custom string art, nail and string art, handmade string art, string art workshops, string art artist UK, bespoke string art, string art gifts, nail art classes"
 author: "UntangleMyStringArt"
 image: "/assets/images/logo/logoimage.png"
 ---
 
 
-<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Welcome To Untangle My String Art</h2>
+<h1 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Professional String Art UK | Custom Nail & String Art Artist</h1>
 
-Where creativity meets craftsmanship! I specialise in personalised string art for all occasions, including parties, custom designs, wellbeing themes, corporate events, and more.
+<div style="text-align:center; margin-bottom:2em;">
+<p><strong>Where creativity meets craftsmanship!</strong> I specialise in <strong>personalised string art</strong> for all occasions, including <strong>custom string art commissions</strong>, <strong>string art workshops</strong>, <strong>handmade string art gifts</strong>, wellbeing themes, corporate events, and <strong>art parties</strong>.</p>
+
+<p>As a professional <strong>string art artist in the UK</strong>, I create <strong>bespoke string art</strong> using traditional <strong>nail and string art techniques</strong>. Whether you're looking for <strong>unique string art gifts</strong>, want to learn in my <strong>string art classes</strong>, or need <strong>custom artwork for your home</strong> - You Name it, I NAIL it! 🎨</p>
+</div>
+
+<div style="background:#f6f8fa; padding:20px; margin:2em 0; border-radius:10px;">
+<h3 style="color:#157878; text-align:center;">🎯 Why Choose UntangleMyStringArt?</h3>
+<ul style="list-style:none; padding:0;">
+<li>✅ <strong>Professional String Art Artist</strong> - Experienced in nail and string art across the UK</li>
+<li>✅ <strong>Custom String Art Commissions</strong> - Personalised designs for any occasion</li>
+<li>✅ <strong>Hands-On Workshops</strong> - Learn string art techniques in friendly classes</li>
+<li>✅ <strong>Unique Handmade Gifts</strong> - Perfect for birthdays, weddings, and special occasions</li>
+<li>✅ <strong>Corporate Events & Parties</strong> - Engaging string art activities for groups</li>
+<li>✅ <strong>Nationwide Service</strong> - Serving customers across England, Scotland, Wales</li>
+</ul>
+</div>
+
+<!-- Enhanced Keywords for Local SEO -->
+<div style="display:none;">
+String art UK, string art England, string art Scotland, string art Wales, personalised string art, custom string art, nail and string art, handmade string art, string art workshops, string art artist UK, bespoke string art, string art gifts, nail art classes, string art commissions, UK string art, string art near me, string art London, string art Manchester, string art Birmingham, professional string art, unique string art</div>
 
 
 

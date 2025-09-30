@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Contact UntangleMyStringArt - Get In Touch"
-description: "Contact UntangleMyStringArt for custom string art commissions, workshop bookings, and art parties. Phone, email, and social media contact information."
-keywords: "contact string artist, UntangleMyStringArt contact, string art commission, workshop booking, art party booking, UK string art contact"
+title: "Contact String Art UK | Book Custom String Art & Workshops"
+description: "Contact UntangleMyStringArt for custom string art commissions, nail art workshops, string art classes & art parties. Professional string art services across the UK."
+keywords: "contact string art UK, book string art workshop, custom string art commission, string art classes UK, nail art workshops, art party booking, string art artist contact"
 author: "UntangleMyStringArt"
 image: "/assets/images/logo/logoimage.png"
 ---

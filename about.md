@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "About Me - UntangleMyStringArt Artist & Creator"
-description: "Meet the artist behind UntangleMyStringArt. Learn about my passion for string art, custom creations, workshops, and artistic journey in the UK."
-keywords: "about string artist, UntangleMyStringArt artist, string art creator, UK artist, handmade art, artistic journey, custom art specialist"
+title: "About UK String Art Artist | Professional Nail & String Art Creator"
+description: "Meet the professional string art artist behind UntangleMyStringArt. Specialising in custom string art, handmade nail art, workshops & bespoke commissions across the UK."
+keywords: "UK string art artist, professional string art creator, nail and string art specialist, custom string art artist, handmade string art, bespoke string art commissions, string art expert UK"
 author: "UntangleMyStringArt"
 image: "/assets/images/artistphoto/photo.png"
 ---
