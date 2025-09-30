@@ -20,7 +20,7 @@ Disallow: /Gemfile.lock
 Disallow: /_config.yml
 
 # Sitemap location
-Sitemap: https://kapricanon.github.io/sitemap.xml
+Sitemap: https://untanglemystringart.co.uk/sitemap.xml
 
 # Crawl delay (be nice to servers)
 Crawl-delay: 1
