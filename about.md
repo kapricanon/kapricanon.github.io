@@ -1,6 +1,10 @@
 ---
 layout: default
-title: About
+title: "About Me - UntangleMyStringArt Artist & Creator"
+description: "Meet the artist behind UntangleMyStringArt. Learn about my passion for string art, custom creations, workshops, and artistic journey in the UK."
+keywords: "about string artist, UntangleMyStringArt artist, string art creator, UK artist, handmade art, artistic journey, custom art specialist"
+author: "UntangleMyStringArt"
+image: "/assets/images/artistphoto/photo.png"
 ---
 
 

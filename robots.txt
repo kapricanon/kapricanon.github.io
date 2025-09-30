@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl CSS and JS files
+Allow: /assets/
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+
+# Block access to admin and system files
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+Disallow: /.git/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /_config.yml
+
+# Sitemap location
+Sitemap: https://kapricanon.github.io/sitemap.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1

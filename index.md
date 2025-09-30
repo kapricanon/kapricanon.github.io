@@ -1,6 +1,10 @@
 ---
 layout: default
-title: UntangleMyStringArt
+title: "UntangleMyStringArt - Personalised String Art, Workshops & Parties"
+description: "Professional string art services in the UK. Custom personalised string art, workshops, exhibitions, parties, and Lippan art. You Name it, I NAIL it!"
+keywords: "string art, personalised string art, custom artwork, workshops, art parties, exhibitions, Lippan art, UK artist, handmade art, nail art, string patterns"
+author: "UntangleMyStringArt"
+image: "/assets/images/logo/logoimage.png"
 ---
 
 

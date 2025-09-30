@@ -4,11 +4,68 @@ baseurl: ""
 url: "https://kapricanon.github.io"
 theme: jekyll-theme-cayman
 
+# SEO and Social Media Settings
+author: "UntangleMyStringArt"
+email: "untanglestringart@gmail.com"
+phone: "+44 7920 692082"
+location: "United Kingdom"
+business_type: "Artist"
+
+# Social Media Links
+social:
+  name: "UntangleMyStringArt"
+  links:
+    - https://www.facebook.com/UntangleMyStringArt/
+    - https://www.instagram.com/untanglemystringart/
+    - https://www.linkedin.com/company/untanglemystringart/
+
+# Jekyll SEO Tag Settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# Jekyll SEO Tag Settings
+seo:
+  type: "Organization"
+  name: "UntangleMyStringArt"
+  description: "Professional string art services including custom artwork, workshops, exhibitions, and parties. Specializing in personalized string art creations and Lippan art."
+  url: "https://kapricanon.github.io"
+  logo: "https://kapricanon.github.io/assets/images/logo/logoimage.png"
+  
+# Open Graph and Twitter Cards
+og_image: "https://kapricanon.github.io/assets/images/logo/logoimage.png"
+twitter:
+  card: "summary_large_image"
+  site: "@untanglemystringart"
+  creator: "@untanglemystringart"
+
+# Google Analytics (add your tracking ID when ready)
+# google_analytics: "G-XXXXXXXXXX"
+
+# Google Search Console (add verification code when ready)
+# google_site_verification: "your-verification-code"
+
+# Language and Locale
+lang: "en-GB"
+locale: "en_GB"
 
 include:
 - _includes/head-custom.html
 - _includes/footer.html
 - assets/images/lippanart
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .jekyll-cache/
 
 
 

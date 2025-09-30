@@ -1,6 +1,10 @@
 ---
-title: Contact Us
 layout: default
+title: "Contact UntangleMyStringArt - Get In Touch"
+description: "Contact UntangleMyStringArt for custom string art commissions, workshop bookings, and art parties. Phone, email, and social media contact information."
+keywords: "contact string artist, UntangleMyStringArt contact, string art commission, workshop booking, art party booking, UK string art contact"
+author: "UntangleMyStringArt"
+image: "/assets/images/logo/logoimage.png"
 ---
 
 
