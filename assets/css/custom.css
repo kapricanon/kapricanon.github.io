@@ -188,6 +188,7 @@ footer[style] {
   overflow: hidden;
   object-fit: cover;
   display: inline-block;
+  margin-top: 3px;
 }
 .header-content {
   flex: 1;
@@ -199,7 +200,7 @@ footer[style] {
   margin-left: 0;
   margin-right: 0;
   height: 100%;
-  /* margin-top removed to avoid moving menu bar */
+  margin-top: -20px;
 }
 .page-header .project-name {
   font-size: 1.05em;
@@ -263,6 +264,7 @@ footer[style] {
     width: 100%;
     align-items: center;
     text-align: center;
+  margin-top: -10px;
   }
   .page-header .project-name {
     font-size: 1.2em;
