@@ -35,10 +35,12 @@
     font-size: 1em !important;
     text-align: left !important;
     align-self: center !important;
-    margin-top: -7px !important;
-    transform: translateY(-5px) !important;
+  margin-top: 0 !important;
+  position: relative !important;
+  top: 35px !important;
     position: relative !important;
-    top: -5px !important;
+    top: 0 !important;
+    transform: none !important;
   }
   .header-social {
     position: absolute !important;
@@ -267,12 +269,14 @@ footer[style] {
     margin-top: -13px;
     margin-bottom: 0.1em;
   }
-  .project-subname {
+  .header-content .project-subname {
     font-size: 0.65em !important;
     text-align: center !important;
     margin-left: 0 !important;
     letter-spacing: 0.01em !important;
-    top: -4px !important;
+    position: relative !important;
+  top: 10px !important;
+    z-index: 100 !important;
   }
   .sticky-nav {
     position: static !important;
