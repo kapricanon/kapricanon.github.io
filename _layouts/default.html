@@ -136,6 +136,32 @@
       </div>
     </header>
 
+    {% if page.url == '/' %}
+    <!-- Homepage Scrolling Image Bar with Arrows -->
+    <div id="homepage-image-bar-container">
+      <button class="homebar-arrow left" aria-label="Scroll left"><span>&#8592;</span></button>
+      <div id="homepage-image-bar">
+        {% for file in site.static_files %}
+          {% if file.path contains '/assets/images/homebar/' %}
+            {% if file.extname == '.jpg' or file.extname == '.JPG' %}
+              <img src="{{ file.path | relative_url }}" alt="" />
+            {% endif %}
+            {% if file.extname == '.jpeg' %}
+              <img src="{{ file.path | relative_url }}" alt="{{ file.name | split: '.' | first | replace: '-', ' ' | capitalize }}" />
+            {% endif %}
+            {% if file.extname == '.png' or file.extname == '.PNG' %}
+              <img src="{{ file.path | relative_url }}" alt="{{ file.name | split: '.' | first | replace: '-', ' ' | capitalize }}" />
+            {% endif %}
+            {% if file.extname == '.gif' %}
+              <img src="{{ file.path | relative_url }}" alt="{{ file.name | split: '.' | first | replace: '-', ' ' | capitalize }}" />
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <button class="homebar-arrow right" aria-label="Scroll right"><span>&#8594;</span></button>
+    </div>
+    {% endif %}
+    <script src="/assets/js/homepage-image-bar.js"></script>
     <main id="content" class="main-content" role="main">
       {{ content }}
 

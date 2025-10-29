@@ -8,25 +8,14 @@ image: "/assets/images/logo/logoimage.png"
 ---
 
 
-<h1 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Professional String Art UK | Custom Nail & String Art Artist</h1>
 
-<div style="text-align:center; margin-bottom:2em;">
-<p><strong>Where creativity meets craftsmanship!</strong> I specialise in <strong>personalised string art</strong> for all occasions, including <strong>custom string art commissions</strong>, <strong>string art workshops</strong>, <strong>handmade string art gifts</strong>, wellbeing themes, corporate events, and <strong>art parties</strong>.</p>
-
-<p>As a professional <strong>string art artist in the UK</strong>, I create <strong>bespoke string art</strong> using traditional <strong>nail and string art techniques</strong>. Whether you're looking for <strong>unique string art gifts</strong>, want to learn in my <strong>string art classes</strong>, or need <strong>custom artwork for your home</strong> - You Name it, I NAIL it! 🎨</p>
+<div style="text-align:center; margin: 2em 0;">
+<h1 style="color:#157878;">Welcome to UntangleMyStringArt!</h1>
+<p>I make custom string art for any occasion—gifts, home decor, workshops, and parties. Every piece is handmade with care and creativity. Want something unique? Just ask—I’ll make it for you!</p>
+<p>Let’s create something special together.</p>
 </div>
 
-<div style="background:#f6f8fa; padding:20px; margin:2em 0; border-radius:10px;">
-<h3 style="color:#157878; text-align:center;">🎯 Why Choose UntangleMyStringArt?</h3>
-<ul style="list-style:none; padding:0;">
-<li>✅ <strong>Professional String Art Artist</strong> - Experienced in nail and string art across the UK</li>
-<li>✅ <strong>Custom String Art Commissions</strong> - Personalised designs for any occasion</li>
-<li>✅ <strong>Hands-On Workshops</strong> - Learn string art techniques in friendly classes</li>
-<li>✅ <strong>Unique Handmade Gifts</strong> - Perfect for birthdays, weddings, and special occasions</li>
-<li>✅ <strong>Corporate Events & Parties</strong> - Engaging string art activities for groups</li>
-<li>✅ <strong>Nationwide Service</strong> - Serving customers across England, Scotland, Wales</li>
-</ul>
-</div>
+
 
 <!-- Enhanced Keywords for Local SEO -->
 <div style="display:none;">
