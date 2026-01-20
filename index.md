@@ -6,14 +6,69 @@ keywords: "string art UK, personalised string art, custom string art, nail and s
 author: "UntangleMyStringArt"
 image: "/assets/images/logo/logoimage.png"
 ---
+<style>
+.homebar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: calc(2em + 30px) 0;
+  width: 100%;
+}
+  .homebar-grid img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 24px #0005;
+    transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s;
+    cursor: pointer;
+  }
+  .homebar-grid a:hover img {
+    transform: scale(1.07);
+    box-shadow: 0 8px 32px #0007;
+    z-index: 2;
+  }
+@media (max-width: 900px) {
+  .homebar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .homebar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 
 
-<div style="text-align:center; margin: 2em 0;">
-<h1 style="color:#157878;">Welcome to UntangleMyStringArt!</h1>
-<p>I make custom string art for any occasion—gifts, home decor, workshops, and parties. Every piece is handmade with care and creativity. Want something unique? Just ask—I’ll make it for you!</p>
-<p>Let’s create something special together.</p>
-</div>
+<div class="site-content-container">
+  <div style="text-align:center; margin: calc(2em - 90px) 0;">
+    <h1 style="font-size: 4em; font-family: 'Montserrat', 'Open Sans', Arial, sans-serif; margin: 0 auto; font-weight: 700; letter-spacing: 0.04em; color: #157878;">
+      <span style="display:inline-block; margin-bottom:-10px; font-size:1.1em; position:relative;">Untangle
+        <img src="/assets/images/tag/tag.png" alt="Tag" style="height:1.1em; position:absolute; left:calc(100% - 19px); top:calc(0.1em + 17px); margin-left:2px; transform: rotate(-18deg); transform-origin: left top;" />
+      </span>
+      <span style="font-size: 0.45em; margin-top:15px; display:block; letter-spacing:0.08em;">My String Art</span>
+    </h1>
+    <div style="text-align:center; font-size: 1.5em; margin-top: 15px; color: #444; margin: 0 auto;">
+      <div style="font-size: 0.7em; margin-top:10px; padding: 10px 0;">Step into a world where threads become magic! Discover vibrant colors, bold textures, and unique designs—each piece is crafted to spark your imagination and brighten your day. Dive in and let creativity inspire you!</div>
+    </div>
+  </div>
+
+
+
+  <div class="homebar-grid">
+    {% assign homebar_images_all = site.static_files | where_exp: "file", "file.path contains '/assets/images/homebar/'" %}
+    {% for image in homebar_images_all %}
+      {% if image.extname == '.jpg' or image.extname == '.jpeg' or image.extname == '.png' %}
+        <a href="{{ image.path }}" data-lightbox="homebar">
+          <img src="{{ image.path }}" alt="String Art Homebar" />
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 
 
 
@@ -21,34 +76,3 @@ image: "/assets/images/logo/logoimage.png"
 <div style="display:none;">
 String art UK, string art England, string art Scotland, string art Wales, personalised string art, custom string art, nail and string art, handmade string art, string art workshops, string art artist UK, bespoke string art, string art gifts, nail art classes, string art commissions, UK string art, string art near me, string art London, string art Manchester, string art Birmingham, professional string art, unique string art</div>
 
-
-
----
-
-## Vision
-To inspire creativity and mindfulness through the art of string and Lippan art, connecting people with meaningful themes and the beauty of symmetry found in nature and mathematics.
-
-I believe that art is a powerful tool for self-expression and personal growth. By blending tradition with innovation, my vision is to spark curiosity and encourage everyone to see the world through a creative lens.
-
-<div id="vision-zigzag" class="mission-zigzag"></div>
-<script src="/assets/js/vision-gallery.js"></script>
-
-## Mission
-To craft captivating pieces of string and Lippan art, run engaging workshops, and support causes that matter—making art accessible, educational, and enjoyable for all ages.
-
-My mission is to nurture artistic talent, promote wellbeing through creativity, and make art a joyful experience for individuals and groups. I strive to create a welcoming space where everyone can learn, share, and celebrate their unique artistic journey.
-
-<div id="mission-zigzag" class="mission-zigzag"></div>
-<script src="/assets/js/mission-gallery.js"></script>
-
-## Goal
-To foster a vibrant community of art lovers, learners, and creators, sharing the joy of handmade art and empowering others to explore their own creative journeys.
-
-My goal is to build lasting connections, inspire positive change, and support meaningful causes through collaborative art projects and events. I aim to make personalised art and creative experiences accessible to all, regardless of age or background.
-
-<div id="goal-zigzag" class="mission-zigzag"></div>
-<script src="/assets/js/goal-gallery.js"></script>
-
----
-
-{% include footer.html %}

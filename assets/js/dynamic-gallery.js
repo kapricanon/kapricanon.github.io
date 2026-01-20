@@ -4,9 +4,6 @@
 (function() {
   // Configuration for each gallery
   var galleries = {
-    'vision-zigzag': '/assets/images/vision/',
-    'mission-zigzag': '/assets/images/mission/', 
-    'goal-zigzag': '/assets/images/goal/'
   };
 
   // Function to create dynamic galleries using Jekyll's site.static_files
@@ -73,28 +70,6 @@
   // Fallback image lists (updated with current files)
   function getFallbackImages(folderPath) {
     var fallbacks = {
-      '/assets/images/vision/': [
-        '/assets/images/vision/480788889_938607615091005_5750351739958449367_n.jpg',
-        '/assets/images/vision/Housewarming.png',
-        '/assets/images/vision/Red and Orange Mandala.jpg',
-        '/assets/images/vision/WhatsApp Image 2023-10-17 at 10.19.31.jpeg'
-      ],
-      '/assets/images/goal/': [
-        '/assets/images/goal/480788889_938607615091005_5750351739958449367_n.jpg',
-        '/assets/images/goal/480981079_938606861757747_4591415150793126171_n.jpg',
-        '/assets/images/goal/481085248_938607261757707_2668360138950638636_n.jpg',
-        '/assets/images/goal/Cactus ornament.jpg',
-        '/assets/images/goal/CaptainA Ornament.jpg',
-        '/assets/images/goal/Housewarming.png',
-        '/assets/images/goal/IMG_6218.jpg',
-        '/assets/images/goal/Red and Orange Mandala.jpg',
-        '/assets/images/goal/WhatsApp Image 2023-10-17 at 10.19.31.jpeg'
-      ],
-      '/assets/images/mission/': [
-        '/assets/images/mission/Colourwheel.jpg',
-        '/assets/images/mission/Eternal Lotus.jpg',
-        '/assets/images/mission/Strings of Mind- Flyer.jpg'
-      ]
     };
 
     return fallbacks[folderPath] || [];
@@ -102,7 +77,7 @@
 
   // Initialize all galleries
   Object.keys(galleries).forEach(function(containerId) {
-    createDynamicGallery(containerId, galleries[containerId]);
+    // createDynamicGallery(containerId, galleries[containerId]);
   });
 
 })();

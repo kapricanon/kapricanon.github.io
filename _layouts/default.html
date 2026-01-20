@@ -1,3 +1,50 @@
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400&display=swap');
+      h1, .site-title, .page-title {
+        font-family: 'Dancing Script', cursive !important;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+      }
+      @media (max-width: 900px) {
+        h1, .site-title, .page-title {
+          margin-top: 65px !important;
+        }
+      }
+    </style>
+<style>
+  .floating-logo {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    width: 88px;
+    height: 88px;
+    z-index: 2001;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+  }
+  @media (max-width: 700px) {
+    .floating-logo {
+      display: flex;
+      width: 48px;
+      height: 48px;
+      top: 10px;
+      left: 10px;
+      z-index: 2001;
+    }
+    .floating-nav {
+      margin-top: 49px !important;
+    }
+    .header-social-container-mobile, .header-social-bar, .social-bar {
+      margin-top: 49px !important;
+    }
+  }
+</style>
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -10,168 +57,381 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" as="style" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" media="all">
     {% include head-custom.html %}
   </head>
   <body>
+    <a href="/" class="floating-logo">
+      <img src="/assets/images/logo/logoimage.png" alt="Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; margin: 0; padding: 0; background: transparent;" />
+    </a>
     <!-- Floating WhatsApp Icon -->
     <style>
       .whatsapp-float {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+      <style>
+        .hamburger {
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          z-index: 1200;
+          margin-left: 0.5em;
+          margin-right: 0;
+          position: relative;
+        }
+        .hamburger span {
+          display: block;
+          height: 4px;
+          width: 28px;
+          background: #222;
+          margin: 5px 0;
+          border-radius: 2px;
+          transition: 0.3s;
+        }
+        @media (max-width: 900px) {
+          .floating-nav {
+            flex-direction: row;
+            padding: 0.4em 0.5em;
+            font-size: 1em;
+            left: 0;
+            top: 10px;
+            width: auto;
+            border-radius: 0;
+            box-shadow: 0 2px 16px 0 rgba(253,188,180,0.10);
+            background: none;
+            position: fixed;
+          }
+          .hamburger {
+            display: flex;
+          }
+          .nav-links {
+            display: none;
+            flex-direction: column;
+            background: rgba(255,255,255,0.98);
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 180px;
+            min-width: 120px;
+            max-width: 90vw;
+            box-shadow: 0 2px 16px 0 rgba(253,188,180,0.10);
+            border-radius: 0 0 12px 12px;
+            z-index: 1200;
+          }
+      .nav-links.open {
+        display: flex !important;
+        position: fixed !important;
+        top: 48px !important;
+        left: 0 !important;
+        width: 180px !important;
+        min-width: 120px !important;
+        max-width: 90vw !important;
+        background: rgba(255,255,255,0.98) !important;
+        box-shadow: 0 2px 16px 0 rgba(253,188,180,0.10) !important;
+        border-radius: 0 0 12px 12px !important;
+        z-index: 2000 !important;
+        flex-direction: column !important;
       }
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-      }
-      .whatsapp-tooltip {
-        position: absolute;
-        right: 72px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #25D366;
-        color: white;
-        padding: 8px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-      }
-      .whatsapp-tooltip::after {
-        content: '';
-        position: absolute;
-        left: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-        border: 6px solid transparent;
-        border-left-color: #25D366;
-      }
-      .whatsapp-float:hover .whatsapp-tooltip {
-        opacity: 1;
-        visibility: visible;
+          .nav-links a, .nav-links .dropdown {
+            margin: 0.5em 1em;
+            font-size: 1.1em;
+          }
+          .dropdown-content {
+            position: static;
+            box-shadow: none;
+            background: none;
+          }
+        }
+      </style>
+
+    </script>
+
+    <!-- Main Navigation Bar -->
+
+    <!-- Responsive Hamburger Menu -->
+    <nav class="floating-nav" id="main-nav">
+      <!-- Hamburger menu removed for mobile version -->
+      <div class="nav-links" id="nav-links">
+        <a href="/" style="color: black;">HOME</a> |
+        <div class="dropdown" style="display: inline-block;">
+          <a href="#" id="my-work-link" style="color: black;">MY WORK</a>
+          <div class="dropdown-content">
+            <span class="tag-link-container">
+              <a href="/mystringart.html">My String Art</a>
+              <span class="handmade-tag">You Name It<br>I Nail It</span>
+            </span>
+            <a href="/workshops.html">Workshops & Exhibitions</a>
+            <a href="/parties.html">Parties</a>
+            <a href="/customartwork.html">Custom Artwork</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+         | <a href="/about.html" style="color: black;">ABOUT ME</a>
+      </div>
+    </nav>
+    <style>
+      @media (max-width: 900px) {
+        .floating-nav {
+          left: 0 !important;
+          transform: none !important;
+        }
+        .hamburger {
+          display: flex;
+          margin-left: 0;
+          margin-right: 0.5em;
+          position: relative;
+          left: 0;
+          top: 0;
+          z-index: 1301;
+        }
+        .menu-label {
+          display: inline-block !important;
+          color: #222;
+          font-weight: 500;
+          margin-left: 0.5em;
+          position: relative;
+          z-index: 1301;
+        }
       }
     </style>
-    <div id="whatsapp-button" class="whatsapp-float" style="position:fixed; bottom:64px; right:24px; z-index:9999; width:64px; height:64px; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.15); display:flex; align-items:center; justify-content:center; cursor:pointer;">
-      <div class="whatsapp-tooltip">WhatsApp Me</div>
-      <img src="/assets/images/whatsapp/whatsapp.png" alt="WhatsApp" style="width:36px; height:36px; border-radius:50%; object-fit:cover;">
-    </div>
-    
+    <script>
+      // Prevent navigation and open dropdown for MY WORK
+      document.addEventListener('DOMContentLoaded', function() {
+        var myWorkLink = document.getElementById('my-work-link');
+        var dropdown = myWorkLink && myWorkLink.nextElementSibling;
+        if (myWorkLink && dropdown) {
+          myWorkLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+          });
+          // Optional: Hide dropdown when clicking outside
+          document.addEventListener('click', function(e) {
+            if (!myWorkLink.contains(e.target) && !dropdown.contains(e.target)) {
+              dropdown.style.display = 'none';
+            }
+          });
+        }
+      });
+    </script>
+    <style>
+      @media (min-width: 901px) {
+        .hamburger {
+          display: none;
+        }
+      }
+      .hamburger {
+        flex-direction: column;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1200;
+        margin-left: 0.5em;
+        margin-right: 0;
+        position: relative;
+      }
+      .hamburger span {
+        display: block;
+        height: 4px;
+        width: 28px;
+        background: #222;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: 0.3s;
+      }
+      @media (max-width: 900px) {
+        .floating-nav {
+          flex-direction: row;
+          align-items: center;
+          padding: 0.4em 0.5em;
+          font-size: 0.92em;
+          left: 0;
+          top: 10px;
+          width: auto;
+          border-radius: 0;
+          box-shadow: 0 2px 16px 0 rgba(253,188,180,0.10);
+          background: none;
+          position: fixed;
+        }
+        .nav-links {
+          display: flex !important;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          position: static;
+          top: auto;
+          left: auto;
+          width: 100vw;
+          min-width: 0;
+          max-width: 100vw;
+          box-shadow: none;
+          border-radius: 0;
+          z-index: 1200;
+          gap: 0.7em;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        .nav-links a, .nav-links .dropdown {
+          margin: 0 0.3em;
+          font-size: 0.98em;
+          white-space: nowrap;
+        }
+        .dropdown-content {
+          position: static;
+          box-shadow: none;
+          background: none;
+        }
+      }
+    </style>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const whatsappButton = document.getElementById('whatsapp-button');
-        
-        whatsappButton.addEventListener('click', function() {
-          const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-          const phoneNumber = '447920692082';
-          const message = encodeURIComponent('Hi there!');
-          
-          if (isMobile) {
-            // For mobile: Use intent:// URL for Android and whatsapp:// for iOS
-            const isAndroid = /Android/i.test(navigator.userAgent);
-            const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-            
-            if (isAndroid) {
-              // Android intent URL - this bypasses the "not on WhatsApp" issue
-              window.location.href = `intent://send?phone=${phoneNumber}&text=${message}#Intent;scheme=whatsapp;package=com.whatsapp;end`;
-            } else if (isIOS) {
-              // iOS - try direct app first, then fallback
-              window.location.href = `whatsapp://send?phone=${phoneNumber}&text=${message}`;
-            } else {
-              // Other mobile browsers
-              window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-            }
-          } else {
-            // Desktop: Use wa.me which opens WhatsApp Web
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-          }
+        var navToggle = document.getElementById('nav-toggle');
+        var navLinks = document.getElementById('nav-links');
+        navToggle.addEventListener('click', function() {
+          var expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', !expanded);
+          navLinks.classList.toggle('open');
         });
       });
     </script>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    <style>
+      .floating-nav {
+        position: fixed;
+        top: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1100;
+        background: rgba(255,255,255,0.5); /* 50% transparent */
+        box-shadow: 0 2px 16px 0 rgba(253,188,180,0.10);
+        border-radius: 16px;
+        padding: 0.5em 2.2em;
+        transition: background 0.2s, box-shadow 0.2s;
+        display: inline-block;
+      }
+      @media (max-width: 700px) {
+        .floating-nav {
+          top: 28px;
+          padding: 0.4em 0.5em;
+          font-size: 0.98em;
+        }
+      }
+      nav > a:hover {
+        color: #fdbcb4;
+        background-color: #fce4ec;
+        transition: background 0.2s;
+      }
+      .dropdown > a:hover {
+          .floating-nav-offset {
+            padding-top: 160px;
+            margin-top: 30px;
+          }
+          @media (max-width: 700px) {
+            .floating-nav-offset {
+              padding-top: 130px;
+            }
+          }
+        color: #fdbcb4;
+        background-color: #fce4ec;
+        transition: background 0.2s;
+      }
+      .dropdown-content a:hover {
+        background-color: #fce4ec;
+        color: black;
+        /* No background for top-level, only submenu */
+      }
+      .dropdown-content a {
+        transition: background 0.2s;
+      }
+      /* Prevent main menu background on submenu hover */
+      .dropdown-content a:hover, .dropdown-content a:focus {
+        background-color: #fce4ec !important;
+        color: black !important;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #fce4ec;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
 
-    <header class="page-header" role="banner">
-  <div class="header-flex" style="position:relative;">
-  <a href="/"><img src="/assets/images/logo/logoimage.png" alt="Logo" class="site-logo circular-logo" /></a>
-        <div class="header-content" style="display:flex; flex-direction:column; justify-content:center; height:100%;">
-          <div style="display:flex; align-items:flex-start; margin-top:1.2em;">
-            <h1 class="project-name" style="margin-bottom:0; font-size:1.8em; line-height:1;">Untangle</h1>
-              <span class="project-subname" style="display:block; align-self:flex-start; margin-left:-50px; font-size:1em; color:#fff; position:relative; top:52px;">MyStringArt</span>
-              <img src="/assets/images/string-rolls-3.svg" id="header-string-rolls" alt="string rolls" style="width:140px; height:auto; margin-left:8px;" />
-          </div>
-          <nav class="sticky-nav" style="margin-top:0; margin-bottom:0;">
-            <a href="/"{% if page.url == '/' %} class="active"{% endif %}>HOME</a> |
-            <a href="/mywork.html"{% if page.url == '/mywork.html' %} class="active"{% endif %}>MY WORK</a> |
-            <a href="/workshops.html"{% if page.url == '/workshops.html' %} class="active"{% endif %}>WORKSHOPS<br>&amp; EXHIBITIONS</a> |
-            <a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>PARTIES</a> |
-            <a href="/customartwork.html"{% if page.url == '/customartwork.html' %} class="active"{% endif %}>CUSTOM ARTWORK</a> |
-            <a href="/lippanart.html"{% if page.url == '/lippanart.html' %} class="active"{% endif %}>LIPPAN ART</a> |
-            <a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>ABOUT ME</a> |
-            <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>CONTACT</a>
-          </nav>
-          <button id="mobile-menu-btn" class="mobile-menu-btn" style="display:none;">Menu &#9776;</button>
-          <div id="mobile-menu-list" class="mobile-menu-list" style="display:none;">
-            <a href="/"{% if page.url == '/' %} class="active"{% endif %}>HOME</a>
-            <a href="/mywork.html"{% if page.url == '/mywork.html' %} class="active"{% endif %}>MY WORK</a>
-            <a href="/workshops.html"{% if page.url == '/workshops.html' %} class="active"{% endif %}>WORKSHOPS<br>&amp; EXHIBITIONS</a>
-            <a href="/parties.html"{% if page.url == '/parties.html' %} class="active"{% endif %}>PARTIES</a>
-            <a href="/customartwork.html"{% if page.url == '/customartwork.html' %} class="active"{% endif %}>CUSTOM ARTWORK</a>
-            <a href="/lippanart.html"{% if page.url == '/lippanart.html' %} class="active"{% endif %}>LIPPAN ART</a>
-            <a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>ABOUT ME</a>
-            <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>CONTACT</a>
-          </div>
-          <script src="/assets/js/mobile-menu.js"></script>
-        </div>
-        <div class="header-social-container-mobile">
-          <div class="header-social" style="position:absolute; bottom:0.2em; right:1.5em; display:flex; gap:1em; align-items:center;">
-          <a href="https://www.facebook.com/UntangleMyStringArt/" target="_blank" title="Facebook" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(200deg);"></a>
-          <a href="https://www.instagram.com/untanglemystringart/" target="_blank" title="Instagram" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(320deg);"></a>
-          <a href="https://www.linkedin.com/company/untanglemystringart/" target="_blank" title="LinkedIn" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(180deg);"></a>
-          <a href="mailto:untanglestringart@gmail.com" title="Email" style="display:inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" style="width:28px;height:28px;filter:invert(20%) sepia(80%) saturate(500%) hue-rotate(0deg);"></a>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-    </header>
-
-    {% if page.url == '/' %}
-    <!-- Homepage Scrolling Image Bar with Arrows -->
-    <div id="homepage-image-bar-container">
-      <button class="homebar-arrow left" aria-label="Scroll left"><span>&#8592;</span></button>
-      <div id="homepage-image-bar">
-        {% for file in site.static_files %}
-          {% if file.path contains '/assets/images/homebar/' %}
-            {% if file.extname == '.jpg' or file.extname == '.JPG' %}
-              <img src="{{ file.path | relative_url }}" alt="" />
-            {% endif %}
-            {% if file.extname == '.jpeg' %}
-              <img src="{{ file.path | relative_url }}" alt="{{ file.name | split: '.' | first | replace: '-', ' ' | capitalize }}" />
-            {% endif %}
-            {% if file.extname == '.png' or file.extname == '.PNG' %}
-              <img src="{{ file.path | relative_url }}" alt="{{ file.name | split: '.' | first | replace: '-', ' ' | capitalize }}" />
-            {% endif %}
-            {% if file.extname == '.gif' %}
-              <img src="{{ file.path | relative_url }}" alt="{{ file.name | split: '.' | first | replace: '-', ' ' | capitalize }}" />
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-      <button class="homebar-arrow right" aria-label="Scroll right"><span>&#8594;</span></button>
+    <!-- Social Media Icons -->
+      <div class="social-bar" style="position: fixed; top: 47px; right: 20px; z-index: 1000; display: flex; gap: 1em; align-items: center;">
+      <a href="https://www.facebook.com/UntangleMyStringArt/" target="_blank" title="Facebook" style="display: inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width: 28px; height: 28px; filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(200deg);"></a>
+      <a href="https://www.instagram.com/untanglemystringart/" target="_blank" title="Instagram" style="display: inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width: 28px; height: 28px; filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(320deg);"></a>
+      <a href="https://www.linkedin.com/company/untanglemystringart/" target="_blank" title="LinkedIn" style="display: inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width: 28px; height: 28px; filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(180deg);"></a>
+      <a href="mailto:untanglestringart@gmail.com" title="Email" style="display: inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" style="width: 28px; height: 28px; filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(0deg);"></a>
     </div>
-    {% endif %}
-    <script src="/assets/js/homepage-image-bar.js"></script>
-    <main id="content" class="main-content" role="main">
-      {{ content }}
+      <style>
+        @media (max-width: 900px) {
+          .social-bar {
+            top: 90px !important;
+            right: 20px !important;
+          }
+        }
+      </style>
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/919825022222" target="_blank" title="WhatsApp" class="whatsapp-float" style="position: fixed; bottom: 88px; right: 32px; z-index: 1200; box-shadow: 0 2px 12px #0002; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: transparent; border-radius: 50%; padding: 0; border: none; overflow: hidden;">
+      <img src="/assets/images/whatsapp/whatsapp.png" alt="WhatsApp" style="width: 28px; height: 28px; border-radius: 50%; background: transparent; display: block; margin: auto; padding: 0; box-shadow: none; border: none; object-fit: contain; object-position: center;">
+    </a>
+
+    <nav class="floating-nav" id="main-nav">
+      <!-- Hamburger menu removed for mobile version -->
+      <div class="nav-links" id="nav-links">
+        <a href="/" style="color: black;">HOME</a> |
+        <div class="dropdown" style="display: inline-block;">
+          <a href="#" id="my-work-link" style="color: black;">MY WORK</a>
+          <div class="dropdown-content">
+            <a href="/mystringart.html">My String Art</a>
+            <a href="/workshops.html">Workshops & Exhibitions</a>
+            <a href="/parties.html">Parties</a>
+            <a href="/customartwork.html">Custom Artwork</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+         | <a href="/about.html" style="color: black;">ABOUT ME</a>
+      </div>
+    </nav>
+
+    <main id="content" class="main-content floating-nav-offset" role="main">
+      <div class="site-content-container">{{ content }}</div>
     </main>
+
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="site-footer-credits">© 2026 Untangle My String Art. All rights reserved.<br>Untangle My String Art – Personalised string art for every occasion.</span>
+    </footer>
     
     <!-- Dynamic image data for galleries -->
     <div data-gallery-images='[

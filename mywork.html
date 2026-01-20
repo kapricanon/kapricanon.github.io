@@ -5,10 +5,13 @@ layout: default
 
 
 
-{% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/mywork/'" %}
-<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">My Work Gallery</h2>
-<div class="lazy-gallery" data-lightbox="mywork" data-images='[
-	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
-]'></div>
-<!-- lazy-gallery.js is now included only once in head-custom.html -->
+<h3 style="text-align:center; color:#157878;">Explore My Work</h3>
+<ul style="text-align:center; list-style:none; padding:0;">
+  <li><a href="/mystringart.html">My String Art</a></li>
+  <li><a href="/workshops.html">Workshops & Exhibitions</a></li>
+  <li><a href="/parties.html">Parties</a></li>
+  <li><a href="/customartwork.html">Custom Artwork</a></li>
+  <li><a href="/contact.html">Contact</a></li>
+</ul>
+
 {% include footer.html %}

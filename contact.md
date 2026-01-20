@@ -19,5 +19,3 @@ You can also look at my latest creations and follow on:
 [Facebook](https://www.facebook.com/UntangleMyStringArt/)<br>
 [Instagram](https://www.instagram.com/untanglemystringart/)<br>
 [LinkedIn](https://www.linkedin.com/company/untanglemystringart/)
-
-{% include footer.html %}

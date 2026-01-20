@@ -2,7 +2,6 @@ title: "UntangleMyStringArt"
 description: "Welcome to UntangleMyStringArt for personalised string art, workshops and parties. You Name it, I NAIL it !!! 😃"
 baseurl: ""
 url: "https://untanglemystringart.co.uk"
-theme: jekyll-theme-cayman
 
 # SEO and Social Media Settings
 author: "UntangleMyStringArt"
@@ -54,7 +53,6 @@ locale: "en_GB"
 include:
 - _includes/head-custom.html
 - _includes/footer.html
-- assets/images/lippanart
 
 # Exclude from processing
 exclude:
