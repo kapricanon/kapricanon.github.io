@@ -1,3 +1,49 @@
+/* Hide status bar when Lightbox overlay is open */
+.lightboxOverlay {
+  pointer-events: none !important;
+}
+.lightboxOverlay .lb-nav,
+.lightboxOverlay .lb-close {
+  pointer-events: auto !important;
+}
+/* Hide image link URL preview on hover (status bar) */
+.lazy-gallery a,
+.menu-grid a {
+  pointer-events: none;
+}
+.lazy-gallery a img,
+.menu-grid a img {
+  pointer-events: auto;
+}
+/* About Me page styling */
+.about-artistic {
+  max-width: 700px;
+  margin: 0 auto 2em auto;
+  font-size: 1.13em;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+}
+
+.about-sections {
+  max-width: 700px;
+  margin: 0 auto 2em auto;
+  font-size: 1.13em;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+}
+.about-sections h3 {
+  color: #157878;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-size: 1.35em;
+  font-weight: 600;
+  text-align: left;
+}
+.about-sections p {
+  margin-bottom: 1em;
+}
 
 
 @media (max-width: 700px) {
