@@ -53,7 +53,7 @@ image: "/assets/images/logo/logoimage.png"
 </style>
 <div class="site-content-container">
   <div class="home-title-mobile-move" style="text-align:center; margin: calc(2em - 90px) 0;">
-    <h1 style="font-size: 4em; font-family: 'Montserrat', 'Open Sans', Arial, sans-serif; margin: 0 auto; font-weight: 700; letter-spacing: 0.04em; color: #157878;">
+    <h1 style="font-size: 4.25em; font-family: 'Montserrat', 'Open Sans', Arial, sans-serif; margin: 0 auto; font-weight: 700; letter-spacing: 0.04em; color: #157878;">
       <style>
       @media (max-width: 700px) {
         .home-title-mobile-move {
@@ -61,17 +61,17 @@ image: "/assets/images/logo/logoimage.png"
         }
       }
       </style>
-      <span class="untangle-mobile-font" style="display:inline-block; margin-bottom:-10px; font-size:1.1em; position:relative;">Untangle
+      <span class="untangle-mobile-font" style="display:inline-block; margin-bottom:-10px; font-size:1.22em; position:relative;">Untangle
         <style>
         @media (max-width: 700px) {
           .untangle-mobile-font {
-            font-size: calc(1.1em - 2pt) !important;
+            font-size: calc(1.22em - 10pt) !important;
           }
         }
         </style>
         <img src="/assets/images/tag/tag.png" alt="Tag" style="height:1.1em; position:absolute; left:calc(100% - 19px); top:calc(0.1em + 17px); margin-left:2px; transform: rotate(-18deg); transform-origin: left top;" />
       </span>
-      <span style="font-size: 0.45em; margin-top:15px; display:block; letter-spacing:0.08em;">My String Art</span>
+      <span style="font-size: 0.52em; margin-top:15px; display:block; letter-spacing:0.08em;">My String Art</span>
     </h1>
     <div style="text-align:center; font-size: 1.5em; margin-top: 15px; color: #444; margin: 0 auto;">
       <div style="font-size: 0.7em; margin-top:10px; padding: 10px 0;">Step into a world where threads become magic! Discover vibrant colors, bold textures, and unique designs—each piece is crafted to spark your imagination and brighten your day. Dive in and let creativity inspire you!</div>
