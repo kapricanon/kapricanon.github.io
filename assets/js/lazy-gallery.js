@@ -49,6 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
         })(a), 30);
       }
       loaded = end;
+      // Re-apply status bar suppression for new links
+      if (window.suppressStatusBarLinks) {
+        window.suppressStatusBarLinks('.lazy-gallery a');
+      }
     }
     function onScroll() {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
