@@ -44,10 +44,31 @@ image: "/assets/images/logo/logoimage.png"
 
 
 
+<style>
+@media (max-width: 700px) {
+  .site-content-container {
+    margin-top: -10px !important;
+  }
+}
+</style>
 <div class="site-content-container">
-  <div style="text-align:center; margin: calc(2em - 90px) 0;">
+  <div class="home-title-mobile-move" style="text-align:center; margin: calc(2em - 90px) 0;">
     <h1 style="font-size: 4em; font-family: 'Montserrat', 'Open Sans', Arial, sans-serif; margin: 0 auto; font-weight: 700; letter-spacing: 0.04em; color: #157878;">
-      <span style="display:inline-block; margin-bottom:-10px; font-size:1.1em; position:relative;">Untangle
+      <style>
+      @media (max-width: 700px) {
+        .home-title-mobile-move {
+          margin-left: -5px !important;
+        }
+      }
+      </style>
+      <span class="untangle-mobile-font" style="display:inline-block; margin-bottom:-10px; font-size:1.1em; position:relative;">Untangle
+        <style>
+        @media (max-width: 700px) {
+          .untangle-mobile-font {
+            font-size: calc(1.1em - 2pt) !important;
+          }
+        }
+        </style>
         <img src="/assets/images/tag/tag.png" alt="Tag" style="height:1.1em; position:absolute; left:calc(100% - 19px); top:calc(0.1em + 17px); margin-left:2px; transform: rotate(-18deg); transform-origin: left top;" />
       </span>
       <span style="font-size: 0.45em; margin-top:15px; display:block; letter-spacing:0.08em;">My String Art</span>

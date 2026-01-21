@@ -176,10 +176,16 @@
       </div>
     </nav>
     <style>
-      @media (max-width: 900px) {
+      @media (max-width: 700px) {
         .floating-nav {
           left: 0 !important;
+          right: 0 !important;
+          width: 100vw !important;
+          min-width: 100vw !important;
+          max-width: 100vw !important;
+          border-radius: 0 !important;
           transform: none !important;
+          box-sizing: border-box !important;
         }
         .hamburger {
           display: flex;
@@ -270,9 +276,9 @@
           position: static;
           top: auto;
           left: auto;
-          width: 100vw;
+          width: 100%;
           min-width: 0;
-          max-width: 100vw;
+          box-sizing: border-box;
           box-shadow: none;
           border-radius: 0;
           z-index: 1200;
@@ -391,9 +397,9 @@
       <a href="mailto:untanglestringart@gmail.com" title="Email" style="display: inline-block;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" style="width: 28px; height: 28px; filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(0deg);"></a>
     </div>
       <style>
-        @media (max-width: 900px) {
+        @media (max-width: 700px) {
           .social-bar {
-            top: 90px !important;
+            top: -30px !important;
             right: 20px !important;
           }
         }
@@ -401,7 +407,19 @@
 
     <!-- Floating WhatsApp Icon -->
     <a href="https://wa.me/919825022222" target="_blank" title="WhatsApp" class="whatsapp-float" style="position: fixed; bottom: 88px; right: 32px; z-index: 1200; box-shadow: 0 2px 12px #0002; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: transparent; border-radius: 50%; padding: 0; border: none; overflow: hidden;">
-      <img src="/assets/images/whatsapp/whatsapp.png" alt="WhatsApp" style="width: 28px; height: 28px; border-radius: 50%; background: transparent; display: block; margin: auto; padding: 0; box-shadow: none; border: none; object-fit: contain; object-position: center;">
+      <img src="/assets/images/whatsapp/whatsapp.png" alt="WhatsApp" class="whatsapp-img" style="width: 28px; height: 28px; border-radius: 50%; background: transparent; display: block; margin: auto; padding: 0; box-shadow: none; border: none; object-fit: contain; object-position: center;">
+        <style>
+          @media (max-width: 700px) {
+            .whatsapp-float {
+              width: 52.8px !important;
+              height: 52.8px !important;
+            }
+            .whatsapp-img {
+              width: 33.6px !important;
+              height: 33.6px !important;
+            }
+          }
+        </style>
     </a>
 
     <nav class="floating-nav" id="main-nav">
