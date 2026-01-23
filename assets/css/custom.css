@@ -2,9 +2,8 @@
 .lazy-gallery img,
 .menu-grid img,
 .homebar-grid img,
+/* .lb-image: removed max-width/max-height so lightbox images show at original size */
 .lb-image {
-  max-width: 80vw !important;
-  max-height: 80vh !important;
   width: auto;
   height: auto;
   display: block;
@@ -14,11 +13,11 @@
 @media (max-width: 700px) {
   .lazy-gallery img,
   .menu-grid img,
-  .homebar-grid img,
-  .lb-image {
+  .homebar-grid img {
     max-width: 80vw !important;
     max-height: 60vh !important;
   }
+  /* .lb-image: removed max-width/max-height for mobile as well */
 }
 /* Hide status bar when Lightbox overlay is open */
 .lightboxOverlay {
