@@ -50,11 +50,9 @@ image: "/assets/images/artistphoto/photo.png"
 
 <div class="about-sections">
   <h3>Vision</h3>
-  <p>To inspire creativity and mindfulness through the art of string and Lippan art, connecting people with meaningful themes and the beauty of symmetry found in nature and mathematics.</p>
-  <p>I believe that art is a powerful tool for self-expression and personal growth. By blending tradition with innovation, my vision is to spark curiosity and encourage everyone to see the world through a creative lens.</p>
+  <p>Through innovative, inspiring, and customised pieces, Untangle My String Art aims to create meaningful, personalised experiences for individuals and corporates — using creativity as a powerful tool to make a lasting difference in wellbeing, connection, and human expression.</p>
   <h3>Mission</h3>
-  <p>To craft captivating pieces of string and Lippan art, run engaging workshops, and support causes that matter, making art accessible, educational, and enjoyable for all ages.</p>
-  <p>My mission is to nurture artistic talent, promote wellbeing through creativity, and make art a joyful experience for individuals and groups. I strive to create a welcoming space where everyone can learn, share, and celebrate their unique artistic journey.</p>
+  <p>To create safe and inclusive spaces for expression through art, where individuals of all ages and abilities can untangle their thoughts, release suppressed emotions, and reconnect with themselves through mindful string art.</p>
   <h3>Goal</h3>
   <p>To foster a vibrant community of art lovers, learners, and creators, sharing the joy of handmade art and empowering others to explore their own creative journeys.</p>
   <p>My goal is to build lasting connections, inspire positive change, and support meaningful causes through collaborative art projects and events. I aim to make personalised art and creative experiences accessible to all, regardless of age or background.</p>
