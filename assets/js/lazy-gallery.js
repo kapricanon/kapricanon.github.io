@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var seen = new Set();
     var filtered = [];
     for (var i = 0; i < images.length; i++) {
-      var p = images[i].path || '';
-      var name = p.split('/').pop().toLowerCase().replace(/\s+/g, '').trim();
-      var key = name;
+        var p = images[i].path || '';
+        var name = p.split('/').pop().toLowerCase().trim(); // Do not remove whitespace
+        var key = name;
       if (images[i].size) {
         key += ':' + images[i].size;
       }
