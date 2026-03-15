@@ -46,7 +46,14 @@ image: "/assets/images/logo/logoimage.png"
 
 <style>
 @media (max-width: 700px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   .site-content-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     margin-top: -10px !important;
   }
 }
@@ -90,6 +97,21 @@ image: "/assets/images/logo/logoimage.png"
       {% endif %}
     {% endfor %}
   </div>
+
+
+
+  <section class="testimonial-marquee" aria-labelledby="homepage-testimonials-title" data-testimonials-source="/assets/data/testimonials.txt">
+    <div class="testimonial-marquee__header">
+      <p class="testimonial-marquee__eyebrow">Kind Words</p>
+      <h2 id="homepage-testimonials-title">Testimonials From Happy Clients</h2>
+    </div>
+
+    <div class="testimonial-marquee__viewport">
+      <div class="testimonial-marquee__track"></div>
+    </div>
+  </section>
+
+  <script src="/assets/js/testimonials-marquee.js"></script>
 
 
 
