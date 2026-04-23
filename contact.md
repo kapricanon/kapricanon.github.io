@@ -19,3 +19,7 @@ You can also look at my latest creations and follow on:
 [Facebook](https://www.facebook.com/UntangleMyStringArt/)<br>
 [Instagram](https://www.instagram.com/untanglemystringart/)<br>
 [LinkedIn](https://www.linkedin.com/company/untanglemystringart/)
+
+<h2 style="text-align:center; color:#157878; margin-top:1.5em;">Company Policy</h2>
+
+<a href="/assets/documents/company-policy.pdf" download="company-policy.pdf">Click here to download the company policy information</a>
