@@ -37,10 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Do not set data-title, so no caption is shown in the lightbox
         a.style.setProperty('--i', i);
         var img = document.createElement('img');
-        img.src = images[i].path;
         img.alt = images[i].name;
         img.width = 200;
         img.loading = 'lazy';
+        img.classList.add('gallery-img-loading');
+        // Fade in when image loads
+        img.onload = function() {
+          this.classList.remove('gallery-img-loading');
+          this.classList.add('gallery-img-loaded');
+        };
+        img.src = images[i].path;
         a.appendChild(img);
         container.appendChild(a);
         // Trigger animation after insertion
