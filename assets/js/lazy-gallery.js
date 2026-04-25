@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     images = filtered;
 
-    var batchSize = 24;
+    var batchSize = 12;
     var loaded = 0;
     // Clear any existing content to avoid duplication
     container.innerHTML = '';
