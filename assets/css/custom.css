@@ -1351,3 +1351,68 @@ footer {
   line-height: 1.2;
   word-break: break-word;
 }
+
+
+/* Homepage CTA buttons */
+.homepage-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  margin: 1.8em 0;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.75em 2.2em;
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 50px;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.cta-btn.cta-btn--primary {
+  background: #157878;
+  color: #fff !important;
+  box-shadow: 0 4px 18px rgba(21, 120, 120, 0.35);
+  border: none;
+}
+
+.cta-btn.cta-btn--primary:hover {
+  background: #1a9e9e !important;
+  color: #fff !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 28px rgba(21, 120, 120, 0.5) !important;
+}
+
+.cta-btn.cta-btn--secondary {
+  background: transparent;
+  color: #157878 !important;
+  border: 2px solid #157878;
+  box-shadow: 0 4px 18px rgba(21, 120, 120, 0.1);
+}
+
+.cta-btn.cta-btn--secondary:hover {
+  background: #157878 !important;
+  color: #fff !important;
+  box-shadow: 0 6px 24px rgba(21, 120, 120, 0.35) !important;
+}
+
+@media (max-width: 600px) {
+  .homepage-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+  }
+
+  .cta-btn {
+    width: 80%;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.7em 1.5em;
+  }
+}

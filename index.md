@@ -83,6 +83,58 @@ image: "/assets/images/logo/logoimage.png"
     <div style="text-align:center; font-size: 1.5em; margin-top: 15px; color: #444; margin: 0 auto;">
       <div style="font-size: 0.7em; margin-top:10px; padding: 10px 0;">Step into a world where threads become magic! Discover vibrant colors, bold textures, and unique designs—each piece is crafted to spark your imagination and brighten your day. Dive in and let creativity inspire you!</div>
     </div>
+
+    <div class="homepage-cta">
+      <a href="/contact" class="cta-btn cta-btn--primary">Commission Your Piece</a>
+      <a href="/book-workshop" class="cta-btn cta-btn--primary">Book a Workshop</a>
+    </div>
+
+    <style>
+      .homepage-cta {
+        display: flex;
+        justify-content: center;
+        gap: 1.2em;
+        margin: 1.8em 0;
+        flex-wrap: wrap;
+      }
+      .homepage-cta .cta-btn {
+        display: inline-block;
+        padding: 0.75em 2.2em;
+        font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+        font-size: 1.05em;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        border-radius: 50px;
+        text-decoration: none !important;
+        cursor: pointer;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      }
+      .homepage-cta .cta-btn--primary {
+        background: #157878 !important;
+        color: #fff !important;
+        box-shadow: 0 4px 18px rgba(21, 120, 120, 0.35);
+        border: none;
+      }
+      .homepage-cta .cta-btn--primary:hover {
+        background: #1a9e9e !important;
+        color: #fff !important;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 8px 28px rgba(21, 120, 120, 0.5);
+      }
+      @media (max-width: 600px) {
+        .homepage-cta {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.8em;
+        }
+        .homepage-cta .cta-btn {
+          width: 80%;
+          text-align: center;
+          font-size: 1em;
+          padding: 0.7em 1.5em;
+        }
+      }
+    </style>
   </div>
 
 

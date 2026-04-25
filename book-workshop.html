@@ -1,0 +1,187 @@
+---
+layout: default
+title: "Book a Workshop | UntangleMyStringArt"
+description: "Book a string art workshop with UntangleMyStringArt. Perfect for team building, parties, schools, and creative events across the UK."
+keywords: "book string art workshop, string art class booking, nail art workshop UK, creative workshop booking, team building art workshop"
+author: "UntangleMyStringArt"
+image: "/assets/images/logo/logoimage.png"
+---
+
+<style>
+  .workshop-form-container {
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .workshop-form-container h2 {
+    text-align: center;
+    color: #157878;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-family: 'Pacifico', 'Dancing Script', cursive;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+  }
+
+  .workshop-form-container .form-intro {
+    text-align: center;
+    color: #5c4b56;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+  }
+
+  .workshop-form label {
+    display: block;
+    margin-bottom: 0.3em;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95em;
+  }
+
+  .workshop-form input,
+  .workshop-form select,
+  .workshop-form textarea {
+    width: 100%;
+    padding: 0.65em 0.8em;
+    margin-bottom: 1.1em;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+
+  .workshop-form input:focus,
+  .workshop-form select:focus,
+  .workshop-form textarea:focus {
+    outline: none;
+    border-color: #157878;
+    box-shadow: 0 0 0 2px rgba(21, 120, 120, 0.15);
+  }
+
+  .workshop-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .workshop-form .form-submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    background: #157878;
+    color: #fff;
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(21, 120, 120, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    margin-top: 0.5em;
+  }
+
+  .workshop-form .form-submit-btn:hover {
+    background: #1a9e9e;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 28px rgba(21, 120, 120, 0.5);
+  }
+
+  .workshop-form .form-row {
+    display: flex;
+    gap: 1em;
+  }
+
+  .workshop-form .form-row > div {
+    flex: 1;
+  }
+
+  @media (max-width: 600px) {
+    .workshop-form-container {
+      padding: 1.2em;
+      margin: 0 2vw 2em;
+    }
+
+    .workshop-form .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+</style>
+
+<div class="workshop-form-container">
+  <h2>Book a Workshop</h2>
+  <p class="form-intro">
+    Interested in a string art workshop for your group, school, team, or party?<br>
+    Fill in the details below and I'll get back to you shortly!
+  </p>
+
+  <form class="workshop-form" action="https://formsubmit.co/untanglestringart@gmail.com" method="POST">
+    <!-- FormSubmit settings -->
+    <input type="hidden" name="_subject" value="New Workshop Booking Enquiry">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="https://untanglemystringart.co.uk/book-workshop-thanks.html">
+    <input type="text" name="_honey" style="display:none">
+
+    <div class="form-row">
+      <div>
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Full name">
+      </div>
+      <div>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Optional">
+      </div>
+      <div>
+        <label for="group-size">Group Size *</label>
+        <select id="group-size" name="group_size" required>
+          <option value="" disabled selected>Select...</option>
+          <option value="1-5">1–5 people</option>
+          <option value="6-10">6–10 people</option>
+          <option value="11-20">11–20 people</option>
+          <option value="21-30">21–30 people</option>
+          <option value="30+">30+ people</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label for="preferred-date">Preferred Date</label>
+        <input type="date" id="preferred-date" name="preferred_date">
+      </div>
+      <div>
+        <label for="event-type">Event Type</label>
+        <select id="event-type" name="event_type">
+          <option value="" disabled selected>Select...</option>
+          <option value="Team Building">Team Building</option>
+          <option value="Birthday Party">Birthday Party</option>
+          <option value="School/Education">School / Education</option>
+          <option value="Hen/Stag Party">Hen / Stag Party</option>
+          <option value="Corporate Event">Corporate Event</option>
+          <option value="Community Group">Community Group</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="message">Additional Details</label>
+    <textarea id="message" name="message" placeholder="Tell me about your event — location, any special requests, questions..."></textarea>
+
+    <button type="submit" class="form-submit-btn">Send Enquiry</button>
+  </form>
+</div>
