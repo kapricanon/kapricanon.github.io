@@ -61,7 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     function onScroll() {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+      // Load more when user scrolls near bottom (within 300px)
+      var scrollPosition = window.innerHeight + window.scrollY;
+      var pageHeight = document.documentElement.scrollHeight;
+      if (scrollPosition >= pageHeight - 300) {
         loadBatch();
         if (loaded >= images.length) {
           window.removeEventListener('scroll', onScroll);
@@ -70,5 +73,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     loadBatch();
     window.addEventListener('scroll', onScroll);
+    
+    // Also check if page is too short to scroll - load all if needed
+    setTimeout(function() {
+      if (document.documentElement.scrollHeight <= window.innerHeight && loaded < images.length) {
+        // Page doesn't need scrolling, load more batches
+        while (loaded < images.length) {
+          loadBatch();
+        }
+      }
+    }, 100);
   });
 });
