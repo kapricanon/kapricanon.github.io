@@ -1,0 +1,156 @@
+---
+layout: default
+title: "Commission Your Piece | Custom String Art | UntangleMyStringArt"
+description: "Commission a custom string art piece from UntangleMyStringArt. Personalised handmade string art for gifts, home decor, and special occasions."
+keywords: "commission string art, custom string art order, personalised string art, bespoke string art UK, handmade string art commission"
+author: "UntangleMyStringArt"
+image: "/assets/images/logo/logoimage.png"
+---
+
+<style>
+  .commission-form-container {
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .commission-form-container h2 {
+    text-align: center;
+    color: #157878;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  .commission-form-container .form-intro {
+    text-align: center;
+    color: #5c4b56;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+  }
+
+  .commission-form-container .form-intro a {
+    color: #157878;
+    text-decoration: underline;
+  }
+
+  .commission-form label {
+    display: block;
+    margin-bottom: 0.3em;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95em;
+  }
+
+  .commission-form input,
+  .commission-form textarea {
+    width: 100%;
+    padding: 0.65em 0.8em;
+    margin-bottom: 1.1em;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+
+  .commission-form input:focus,
+  .commission-form textarea:focus {
+    outline: none;
+    border-color: #157878;
+    box-shadow: 0 0 0 2px rgba(21, 120, 120, 0.15);
+  }
+
+  .commission-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .commission-form .form-submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    background: #157878;
+    color: #fff;
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(21, 120, 120, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    margin-top: 0.5em;
+  }
+
+  .commission-form .form-submit-btn:hover {
+    background: #1a9e9e;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 28px rgba(21, 120, 120, 0.5);
+  }
+
+  .commission-form .form-row {
+    display: flex;
+    gap: 1em;
+  }
+
+  .commission-form .form-row > div {
+    flex: 1;
+  }
+
+  @media (max-width: 600px) {
+    .commission-form-container {
+      padding: 1.2em;
+      margin: 0 2vw 2em;
+    }
+
+    .commission-form .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+</style>
+
+<div class="commission-form-container">
+  <h2>Commission Your Piece</h2>
+  <p class="form-intro">
+    You can either use the <a href="/contact">Contact Us</a> page to get in touch, or fill in the form below and I'll get back to you to discuss your custom piece!
+  </p>
+
+  <form class="commission-form" action="https://formsubmit.co/untanglestringart@gmail.com" method="POST">
+    <!-- FormSubmit settings -->
+    <input type="hidden" name="_subject" value="New Commission Enquiry">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="https://untanglemystringart.co.uk/commission-thanks.html">
+    <input type="text" name="_honey" style="display:none">
+
+    <div class="form-row">
+      <div>
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Full name">
+      </div>
+      <div>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+    </div>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Optional">
+
+    <label for="description">Describe Your Piece *</label>
+    <textarea id="description" name="description" required placeholder="Tell me what you have in mind — size, colours, design, occasion, any reference images you'd like to share..."></textarea>
+
+    <button type="submit" class="form-submit-btn">Send Enquiry</button>
+  </form>
+</div>

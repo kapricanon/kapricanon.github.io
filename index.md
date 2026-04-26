@@ -85,7 +85,7 @@ image: "/assets/images/logo/logoimage.png"
     </div>
 
     <div class="homepage-cta">
-      <a href="/contact" class="cta-btn cta-btn--primary">Commission Your Piece</a>
+      <a href="/commission" class="cta-btn cta-btn--primary">Commission Your Piece</a>
       <a href="/book-workshop" class="cta-btn cta-btn--primary">Book a Workshop</a>
     </div>
 
