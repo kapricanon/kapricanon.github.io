@@ -7,38 +7,78 @@ author: "UntangleMyStringArt"
 image: "/assets/images/logo/logoimage.png"
 ---
 <style>
-.homebar-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+.homebar-carousel {
+  position: relative;
   margin: calc(2em + 30px) 0;
   width: 100%;
 }
-  .homebar-grid img {
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 4px 24px #0005;
-    transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s;
-    cursor: pointer;
-  }
-  .homebar-grid a:hover img {
-    transform: scale(1.07);
-    box-shadow: 0 8px 32px #0007;
-    z-index: 2;
-  }
+.homebar-carousel__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+.homebar-carousel__track {
+  display: flex;
+  will-change: transform;
+}
+.homebar-carousel__track a {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.homebar-carousel__track img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+  background: #fff;
+  box-shadow: 0 4px 24px #0005;
+  transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s;
+  cursor: pointer;
+}
+.homebar-carousel__track a:hover img {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px #0007;
+}
+.homebar-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255,255,255,0.85);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #0003;
+  transition: background 0.2s, box-shadow 0.2s;
+  padding: 0;
+}
+.homebar-carousel__btn:hover {
+  background: #fff;
+  box-shadow: 0 4px 18px #0005;
+}
+.homebar-carousel__btn--prev { left: -20px; }
+.homebar-carousel__btn--next { right: -20px; }
+.homebar-carousel__btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #157878;
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 @media (max-width: 900px) {
-  .homebar-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .homebar-carousel__track a { flex: 0 0 50%; }
 }
 @media (max-width: 600px) {
-  .homebar-grid {
-    grid-template-columns: 1fr;
-  }
+  .homebar-carousel__track a { flex: 0 0 100%; }
+  .homebar-carousel__btn--prev { left: 4px; }
+  .homebar-carousel__btn--next { right: 4px; }
 }
 </style>
 
@@ -139,16 +179,85 @@ image: "/assets/images/logo/logoimage.png"
 
 
 
-  <div class="homebar-grid">
-    {% assign homebar_images_all = site.static_files | where_exp: "file", "file.path contains '/assets/images/homebar/'" %}
-    {% for image in homebar_images_all %}
-      {% if image.extname == '.jpg' or image.extname == '.jpeg' or image.extname == '.png' %}
-        <a href="{{ image.path }}" data-lightbox="homebar">
-          <img src="{{ image.path }}" alt="String Art Homebar" />
-        </a>
-      {% endif %}
-    {% endfor %}
+  <div class="homebar-carousel">
+    <button class="homebar-carousel__btn homebar-carousel__btn--prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="homebar-carousel__viewport">
+      <div class="homebar-carousel__track">
+        {% assign homebar_images_all = site.static_files | where_exp: "file", "file.path contains '/assets/images/homebar/'" %}
+        {% for image in homebar_images_all %}
+          {% if image.extname == '.jpg' or image.extname == '.jpeg' or image.extname == '.png' %}
+            <a href="{{ image.path }}" data-lightbox="homebar">
+              <img src="{{ image.path }}" alt="String Art Homebar" />
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <button class="homebar-carousel__btn homebar-carousel__btn--next" aria-label="Next image">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
   </div>
+
+  <script>
+  (function() {
+    var track = document.querySelector('.homebar-carousel__track');
+    if (!track) return;
+
+    var origItems = Array.from(track.children);
+    var total = origItems.length;
+    if (total === 0) return;
+
+    // Append one clone set — when pos reaches the full original width we loop back to 0
+    origItems.forEach(function(item) { track.appendChild(item.cloneNode(true)); });
+
+    var pos = 0;
+    var paused = false;
+    var speed = 40; // px per second
+    var lastTs = null;
+
+    function getVisible() {
+      var w = window.innerWidth;
+      if (w <= 600) return 1;
+      if (w <= 900) return 2;
+      return 4;
+    }
+
+    function iw() { return track.parentElement.offsetWidth / getVisible(); }
+    function loopWidth() { return total * iw(); }
+
+    function setPos(p) {
+      var lw = loopWidth();
+      pos = ((p % lw) + lw) % lw;
+      track.style.transform = 'translateX(-' + pos + 'px)';
+    }
+
+    function tick(ts) {
+      if (!paused) {
+        if (lastTs !== null) setPos(pos + speed * (ts - lastTs) / 1000);
+        lastTs = ts;
+      } else {
+        lastTs = null;
+      }
+      requestAnimationFrame(tick);
+    }
+
+    var carousel = document.querySelector('.homebar-carousel');
+    carousel.addEventListener('mouseenter', function() { paused = true; });
+    carousel.addEventListener('mouseleave', function() { paused = false; });
+
+    document.querySelector('.homebar-carousel__btn--prev').addEventListener('click', function() {
+      setPos(pos - iw());
+    });
+
+    document.querySelector('.homebar-carousel__btn--next').addEventListener('click', function() {
+      setPos(pos + iw());
+    });
+
+    requestAnimationFrame(tick);
+  })();
+  </script>
 
 
 
