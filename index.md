@@ -76,7 +76,8 @@ image: "/assets/images/logo/logoimage.png"
   .homebar-carousel__track a { flex: 0 0 50%; }
 }
 @media (max-width: 600px) {
-  .homebar-carousel__track a { flex: 0 0 100%; }
+  .homebar-carousel__track a { flex: 0 0 50%; }
+  .homebar-carousel__track img { height: 160px; }
   .homebar-carousel__btn--prev { left: 4px; }
   .homebar-carousel__btn--next { right: 4px; }
 }
@@ -219,7 +220,7 @@ image: "/assets/images/logo/logoimage.png"
 
     function getVisible() {
       var w = window.innerWidth;
-      if (w <= 600) return 1;
+      if (w <= 600) return 2;
       if (w <= 900) return 2;
       return 4;
     }
