@@ -117,7 +117,7 @@ image: "/assets/images/logo/logoimage.png"
           }
         }
         </style>
-        <img src="/assets/images/tag/tag.png" alt="Tag" style="height:1.1em; position:absolute; left:calc(100% - 19px); top:calc(0.1em + 17px); margin-left:2px; transform: rotate(-18deg); transform-origin: left top;" />
+        <img src="/assets/images/tag/tag.png" alt="" style="height:1.1em; position:absolute; left:calc(100% - 19px); top:calc(0.1em + 17px); margin-left:2px; transform: rotate(-18deg); transform-origin: left top;" />
       </span>
       <span style="font-size: 0.52em; margin-top:15px; display:block; letter-spacing:0.08em;">My String Art</span>
     </h1>
