@@ -275,7 +275,112 @@ image: "/assets/images/logo/logoimage.png"
 
   <script src="/assets/js/testimonials-marquee.js"></script>
 
-
+  <section class="review-section" aria-labelledby="leave-review-title">
+    <div class="review-section__container">
+      <h2 id="leave-review-title" class="review-section__title">Love My Work? Leave a Review!</h2>
+      <p class="review-section__subtitle">Your feedback means the world to me. Share your experience on your preferred platform:</p>
+      <div class="review-section__links">
+        <a href="https://www.google.com/search?q=UntangleMyStringArt" class="review-btn review-btn--google" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <span class="google-text"><span class="google-g">G</span><span style="color: #EA4335;">o</span><span style="color: #FBBC04;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span></span> Reviews
+        </a>
+        <a href="https://www.facebook.com/UntangleMyStringArt/" class="review-btn review-btn--facebook" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook Reviews
+        </a>
+      </div>
+    </div>
+    <style>
+      .review-section {
+        margin: 4em 0;
+        padding: 2.5em;
+        background: linear-gradient(135deg, rgba(21, 120, 120, 0.08) 0%, rgba(21, 120, 120, 0.04) 100%);
+        border-radius: 12px;
+        border-top: 3px solid #157878;
+      }
+      .review-section__container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .review-section__title {
+        font-size: 1.8em;
+        font-weight: 700;
+        color: #157878;
+        margin-bottom: 0.5em;
+        letter-spacing: 0.02em;
+      }
+      .review-section__subtitle {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 1.8em;
+        line-height: 1.6;
+      }
+      .review-section__links {
+        display: flex;
+        gap: 1.2em;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .review-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8em;
+        padding: 0.9em 1.8em;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1em;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+      .review-btn--google {
+        background: #f8f9fa;
+        color: #3c4043;
+        border: 2px solid #dadce0;
+      }
+      .review-btn--google:hover {
+        background: #fff;
+        border-color: #4285f4;
+        box-shadow: 0 4px 12px rgba(66, 133, 244, 0.25);
+        transform: translateY(-2px);
+      }
+      .google-g {
+        background: linear-gradient(90deg, #4285F4 0%, #EA4335 25%, #FBBC04 50%, #4285F4 75%, #34A853 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+      }
+      .review-btn--facebook {
+        background: #1877f2;
+        color: #fff;
+      }
+      .review-btn--facebook:hover {
+        background: #165fe5;
+        box-shadow: 0 4px 12px rgba(24, 119, 242, 0.35);
+        transform: translateY(-2px);
+      }
+      @media (max-width: 600px) {
+        .review-section {
+          margin: 2em 0;
+          padding: 1.8em;
+        }
+        .review-section__title {
+          font-size: 1.4em;
+        }
+        .review-section__links {
+          flex-direction: column;
+          gap: 0.8em;
+        }
+        .review-btn {
+          width: 100%;
+          justify-content: center;
+          padding: 0.85em 1.5em;
+        }
+      }
+    </style>
+  </section>
 
 <!-- Enhanced Keywords for Local SEO -->
 <div style="display:none;">
