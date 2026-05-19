@@ -385,7 +385,7 @@ image: "/assets/images/logo/logoimage.png"
 
 <section class="guide-section">
   <div class="guide-section__container">
-      <div style="font-size:2em; letter-spacing:0.15em; margin-bottom:0.3em;">🧵📖🪡</div>
+      <div style="font-size:2em; letter-spacing:0.15em; margin-bottom:0.3em;">🧵📖</div>
     <h2 class="guide-section__title">Want to Learn More About String Art?</h2>
     <p class="guide-section__subtitle">Discover techniques, tips, and inspiration in our complete string art guide.</p>
     <a href="/string-art-guide" class="guide-btn">Read the Complete Guide &rarr;</a>
