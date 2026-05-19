@@ -7,6 +7,55 @@ date: 2025-09-30
 author: "UntangleMyStringArt"
 ---
 
+<style>
+  .string-art-guide {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.05em;
+    line-height: 1.75;
+    color: #333;
+  }
+  .string-art-guide h1 {
+    color: #157878;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  .string-art-guide h2 {
+    color: #157878;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.35em;
+    margin-top: 1.8em;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+  }
+  .string-art-guide h3 {
+    color: #157878;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    margin-top: 1.2em;
+    margin-bottom: 0.3em;
+    font-weight: 600;
+  }
+  .string-art-guide p, .string-art-guide li {
+    color: #333;
+  }
+  .string-art-guide ul, .string-art-guide ol {
+    padding-left: 1.5em;
+  }
+  .string-art-guide strong {
+    color: #333;
+  }
+  .string-art-guide hr {
+    border: none;
+    border-top: 1px solid #e0c8d0;
+    margin: 2em 0;
+  }
+</style>
+
+<div class="string-art-guide" markdown="1">
+
 # The Complete Guide to String Art in the UK
 
 ## What is String Art?
@@ -85,4 +134,6 @@ Ready to explore the wonderful world of **string art**? Whether you want to:
 
 ---
 
-**Keywords:** String art UK, nail and string art, personalised string art, custom string art, handmade string art, string art workshops, UK string art artist, bespoke string art, string art classes, professional string art
+<div style="display:none;">Keywords: String art UK, nail and string art, personalised string art, custom string art, handmade string art, string art workshops, UK string art artist, bespoke string art, string art classes, professional string art</div>
+
+</div>

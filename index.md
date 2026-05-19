@@ -382,6 +382,77 @@ image: "/assets/images/logo/logoimage.png"
     </style>
   </section>
 
+<section class="guide-section">
+  <div class="guide-section__container">
+    <h2 class="guide-section__title">Want to Learn More About String Art?</h2>
+    <p class="guide-section__subtitle">Discover techniques, tips, and inspiration in our complete string art guide.</p>
+    <a href="/string-art-guide" class="guide-btn">Read the Complete Guide &rarr;</a>
+  </div>
+  <style>
+    .guide-section {
+      margin: 1em 0 4em;
+      padding: 2.5em;
+      background: linear-gradient(135deg, rgba(21, 120, 120, 0.08) 0%, rgba(21, 120, 120, 0.04) 100%);
+      border-radius: 12px;
+      border-top: 3px solid #157878;
+    }
+    .guide-section__container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .guide-section__title {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #157878;
+      margin-bottom: 0.5em;
+      letter-spacing: 0.02em;
+    }
+    .guide-section__subtitle {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 1.8em;
+      line-height: 1.6;
+    }
+    .guide-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      padding: 0.9em 2em;
+      border-radius: 8px;
+      text-decoration: none !important;
+      font-weight: 600;
+      font-size: 1em;
+      background: #157878;
+      color: #fff !important;
+      border: 2px solid #157878;
+      transition: all 0.3s ease;
+    }
+    .guide-btn:hover {
+      background: #1a9e9e;
+      border-color: #1a9e9e;
+      box-shadow: 0 4px 12px rgba(21, 120, 120, 0.35);
+      transform: translateY(-2px);
+      text-decoration: none !important;
+      color: #fff !important;
+    }
+    @media (max-width: 600px) {
+      .guide-section {
+        margin: 0.5em 0 2em;
+        padding: 1.8em;
+      }
+      .guide-section__title {
+        font-size: 1.4em;
+      }
+      .guide-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.85em 1.5em;
+      }
+    }
+  </style>
+</section>
+
 <!-- Enhanced Keywords for Local SEO -->
 <div style="display:none;">
 String art UK, string art England, string art Scotland, string art Wales, personalised string art, custom string art, nail and string art, handmade string art, string art workshops, string art artist UK, bespoke string art, string art gifts, nail art classes, string art commissions, UK string art, string art near me, string art London, string art Manchester, string art Birmingham, professional string art, unique string art</div>
