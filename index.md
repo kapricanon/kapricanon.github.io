@@ -277,6 +277,7 @@ image: "/assets/images/logo/logoimage.png"
 
   <section class="review-section" aria-labelledby="leave-review-title">
     <div class="review-section__container">
+      <div style="font-size:2em; color:#f5b400; letter-spacing:0.1em; margin-bottom:0.3em;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <h2 id="leave-review-title" class="review-section__title">Love My Work? Leave a Review!</h2>
       <p class="review-section__subtitle">Your feedback means the world to me. Share your experience on your preferred platform:</p>
       <div class="review-section__links">
