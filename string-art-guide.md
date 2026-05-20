@@ -56,15 +56,15 @@ author: "UntangleMyStringArt"
 
 <div class="string-art-guide" markdown="1">
 
-# The Complete Guide to String Art in the UK
+# The Complete Guide to String Art
 
 ## What is String Art?
 
 **String art** (also known as **nail and string art**) is a beautiful craft technique that creates stunning visual designs using nails, pins, and colored string or thread. This traditional art form has experienced a huge revival in the UK, with many people discovering the therapeutic and creative benefits of **handmade string art**.
 
-## Why String Art is Perfect for UK Homes
+## Why String Art is Perfect for Your Home
 
-**Personalised string art** makes the perfect addition to any British home. Whether you're looking for:
+**Personalised string art** makes the perfect addition to any home. Whether you're looking for:
 
 - **Custom string art** for your living room
 - **Unique string art gifts** for loved ones  
