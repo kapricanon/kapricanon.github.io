@@ -1,0 +1,12 @@
+---
+title: CORPORATE EVENTS
+layout: default
+---
+
+<h2 style="text-align:center; color:#157878; margin-top:calc(1.5em - 40px);">Corporate Events</h2>
+<p>String art experiences for teams, corporate gifting, and events. <a href="mailto:untanglestringart@gmail.com">Contact Me</a> for more details.</p>
+{% assign images = site.static_files | where_exp: "file", "file.path contains '/assets/images/corporateevents/'" %}
+<div class="lazy-gallery" data-lightbox="corporateevents" data-images='[
+	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
+]'></div>
+{% include footer.html %}

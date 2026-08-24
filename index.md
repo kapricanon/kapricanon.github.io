@@ -127,7 +127,7 @@ image: "/assets/images/logo/logoimage.png"
 
     <div class="homepage-cta">
       <a href="/commission" class="cta-btn cta-btn--primary">Commission Your Piece</a>
-      <a href="/book-workshop" class="cta-btn cta-btn--primary">Book a Workshop</a>
+      <a href="/book-workshop" class="cta-btn cta-btn--primary">Book an Event / Workshop</a>
     </div>
 
     <style>

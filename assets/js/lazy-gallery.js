@@ -4,6 +4,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   var galleryContainers = document.querySelectorAll('.lazy-gallery');
   galleryContainers.forEach(function(container) {
+    if (container.dataset.galleryInitialized === 'true') {
+      return;
+    }
+    container.dataset.galleryInitialized = 'true';
+
     var images = JSON.parse(container.getAttribute('data-images'));
     // Deduplicate the entire image list before any batching occurs
     var seen = new Set();

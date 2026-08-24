@@ -9,5 +9,4 @@ layout: default
 <div class="lazy-gallery" data-lightbox="parties" data-images='[
 	{% for image in images %}{"path": "{{ image.path }}", "name": "{{ image.name }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
 ]'></div>
-<script src="/assets/js/lazy-gallery.js"></script>
 {% include footer.html %}
