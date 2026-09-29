@@ -327,8 +327,6 @@ image: "/assets/images/logo/logoimage.png"
   })();
   </script>
 
-
-
   <section class="testimonial-marquee" aria-labelledby="homepage-testimonials-title" data-testimonials-source="/assets/data/testimonials.txt">
     <div class="testimonial-marquee__header">
       <p class="testimonial-marquee__eyebrow">Kind Words</p>
