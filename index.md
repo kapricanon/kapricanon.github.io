@@ -178,6 +178,73 @@ image: "/assets/images/logo/logoimage.png"
     </style>
   </div>
 
+  <style>
+    .upcoming-workshop-banner {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1.1rem !important;
+      width: min(900px, 100%) !important;
+      margin: 4.5rem auto 2.2rem !important;
+      padding: 1rem 1.25rem 1rem 1rem !important;
+      box-sizing: border-box !important;
+      color: #4e3c47 !important;
+      text-decoration: none !important;
+      background: linear-gradient(110deg, #fff8df, #fff0c7 55%, #ffe7ed) !important;
+      border: 1px solid rgba(192, 96, 127, 0.2) !important;
+      border-radius: 18px !important;
+      box-shadow: 0 10px 28px rgba(145, 80, 104, 0.14) !important;
+    }
+    .upcoming-workshop-banner__logo { width: 72px !important; height: 72px !important; flex: 0 0 72px !important; object-fit: contain !important; border-radius: 12px !important; }
+    .upcoming-workshop-banner__date {
+      display: grid !important;
+      place-content: center !important;
+      flex: 0 0 76px !important;
+      aspect-ratio: 1 !important;
+      border-radius: 14px !important;
+      background: #157878 !important;
+      color: #fff !important;
+      font-family: 'Montserrat', 'Open Sans', Arial, sans-serif !important;
+      font-size: 1.25rem !important;
+      font-weight: 700 !important;
+      line-height: 0.9 !important;
+      text-align: center !important;
+    }
+    .upcoming-workshop-banner__date small { display: block !important; position: relative !important; top: 0.12em !important; font-size: 0.75em !important; letter-spacing: 0.12em !important; }
+    .upcoming-workshop-banner__content { display: grid !important; gap: 0.2rem !important; min-width: 0 !important; flex: 1 !important; }
+    .upcoming-workshop-banner__eyebrow { color: #c0607f !important; font-size: 0.72rem !important; font-weight: 700 !important; letter-spacing: 0.16em !important; text-transform: uppercase !important; }
+    .upcoming-workshop-banner__content strong { color: #157878 !important; font-family: 'Montserrat', 'Open Sans', Arial, sans-serif !important; font-size: 1.1rem !important; }
+    .upcoming-workshop-banner__links { display: flex !important; gap: 0.55rem !important; flex: 0 0 auto !important; }
+    .upcoming-workshop-banner__link { padding: 0.55rem 0.8rem !important; border: 1px solid rgba(21, 120, 120, 0.35) !important; border-radius: 999px !important; color: #157878 !important; font-size: 0.82rem !important; font-weight: 700 !important; text-decoration: none !important; white-space: nowrap !important; }
+    .upcoming-workshop-banner__link:hover, .upcoming-workshop-banner__link:focus-visible { background: #157878 !important; color: #fff !important; }
+    @media (max-width: 600px) {
+      .upcoming-workshop-banner { align-items: flex-start !important; gap: 0.8rem !important; padding: 0.85rem !important; }
+      .upcoming-workshop-banner__logo { width: 52px !important; height: 52px !important; flex-basis: 52px !important; }
+      .upcoming-workshop-banner__date { flex-basis: 68px !important; font-size: 1.05rem !important; }
+      .upcoming-workshop-banner__links { flex-direction: column !important; gap: 0.35rem !important; }
+    }
+  </style>
+  <div class="upcoming-workshop-banner" data-event-hide-after="2026-10-20T00:00:00+01:00">
+    <img class="upcoming-workshop-banner__logo" src="/assets/images/logo/holyartlogo.png" alt="The Holy Art Gallery logo">
+    <span class="upcoming-workshop-banner__date">16-19<br><small>OCT</small></span>
+    <span class="upcoming-workshop-banner__content">
+      <span class="upcoming-workshop-banner__eyebrow">Featured In Upcoming Exhibition</span>
+      <strong>The Holy Art Gallery, London</strong>
+      <span>16-19 October · London</span>
+    </span>
+    <span class="upcoming-workshop-banner__links">
+      <a class="upcoming-workshop-banner__link" href="https://www.theholyart.com/journal/sveta-sangani" target="_blank" rel="noopener noreferrer">Spotlight <span aria-hidden="true">↗</span></a>
+      <a class="upcoming-workshop-banner__link" href="https://tinyurl.com/3eryxyv4" target="_blank" rel="noopener noreferrer">Private Viewing <span aria-hidden="true">↗</span></a>
+    </span>
+  </div>
+  <script>
+    (function () {
+      var banner = document.querySelector('[data-event-hide-after]');
+      if (banner && Date.now() >= new Date(banner.dataset.eventHideAfter).getTime()) {
+        banner.hidden = true;
+      }
+    }());
+  </script>
+
 
 
   <div class="homebar-carousel">
@@ -189,7 +256,7 @@ image: "/assets/images/logo/logoimage.png"
         {% assign homebar_images_all = site.static_files | where_exp: "file", "file.path contains '/assets/images/homebar/'" %}
         {% for image in homebar_images_all %}
           {% if image.extname == '.jpg' or image.extname == '.jpeg' or image.extname == '.png' %}
-            <a href="{{ image.path }}" data-lightbox="homebar">
+            <a href="{{ image.path }}" data-lightbox="homebar" data-title="Handmade string art designed to bring warmth, colour, and personal meaning into a special space." title="Handmade string art designed to bring warmth, colour, and personal meaning into a special space.">
               <img src="{{ image.path }}" alt="String Art Homebar" />
             </a>
           {% endif %}
