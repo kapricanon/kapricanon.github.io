@@ -371,6 +371,7 @@ html, body {
 
 .testimonial-marquee__track {
   display: flex;
+  align-items: flex-start;
   gap: 1rem;
   width: max-content;
   animation: testimonial-marquee-scroll 38s linear infinite;
@@ -384,7 +385,6 @@ html, body {
 
 .testimonial-card {
   width: min(285px, 72vw);
-  min-height: 180px;
   padding: 1.15rem;
   display: flex;
   flex-direction: column;
@@ -452,7 +452,6 @@ html, body {
 
   .testimonial-card {
     width: min(74vw, 255px);
-    min-height: 165px;
     padding: 1rem;
     flex: 0 0 auto;
     box-sizing: border-box;
@@ -519,11 +518,10 @@ html, body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 .testimonials-list__card {
-  min-height: 220px;
   padding: 1.65rem;
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.72);
