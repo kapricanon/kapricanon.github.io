@@ -217,10 +217,15 @@ image: "/assets/images/logo/logoimage.png"
     .upcoming-workshop-banner__link { padding: 0.55rem 0.8rem !important; border: 1px solid rgba(21, 120, 120, 0.35) !important; border-radius: 999px !important; color: #157878 !important; font-size: 0.82rem !important; font-weight: 700 !important; text-decoration: none !important; white-space: nowrap !important; }
     .upcoming-workshop-banner__link:hover, .upcoming-workshop-banner__link:focus-visible { background: #157878 !important; color: #fff !important; }
     @media (max-width: 600px) {
-      .upcoming-workshop-banner { align-items: flex-start !important; gap: 0.8rem !important; padding: 0.85rem !important; }
-      .upcoming-workshop-banner__logo { width: 52px !important; height: 52px !important; flex-basis: 52px !important; }
-      .upcoming-workshop-banner__date { flex-basis: 68px !important; font-size: 1.05rem !important; }
-      .upcoming-workshop-banner__links { flex-direction: column !important; gap: 0.35rem !important; }
+      .upcoming-workshop-banner { display: grid !important; grid-template-columns: 44px minmax(0, 1fr) !important; align-items: center !important; gap: 0.65rem !important; margin: 3.25rem auto 1.25rem !important; padding: 0.75rem !important; }
+      .upcoming-workshop-banner__logo { width: 44px !important; height: 44px !important; flex: none !important; }
+      .upcoming-workshop-banner__date { display: none !important; }
+      .upcoming-workshop-banner__content { gap: 0.16rem !important; }
+      .upcoming-workshop-banner__eyebrow { font-size: 0.58rem !important; letter-spacing: 0.08em !important; line-height: 1.25 !important; }
+      .upcoming-workshop-banner__content strong { font-size: 0.92rem !important; line-height: 1.25 !important; }
+      .upcoming-workshop-banner__content > span:last-child { font-size: 0.76rem !important; line-height: 1.3 !important; }
+      .upcoming-workshop-banner__links { grid-column: 1 / -1 !important; display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 0.5rem !important; }
+      .upcoming-workshop-banner__link { padding: 0.5rem 0.35rem !important; font-size: 0.72rem !important; text-align: center !important; }
     }
   </style>
   <div class="upcoming-workshop-banner" data-event-hide-after="2026-10-20T00:00:00+01:00">
